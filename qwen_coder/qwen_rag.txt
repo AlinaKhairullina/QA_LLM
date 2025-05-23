@@ -1,0 +1,3000 @@
+grants owner role
+Yes
+in default object acl
+Yes creates tarball
+Writes setup.py to tarball.
+tarball with setup.py
+inside parent dir
+Yes creates certbot dirs
+certbot config work logs directories
+No retrieves formatted string
+policy key formatted string
+No
+Removes user's like from object
+Deletes message and associated categories.
+when message is deleted
+labels removed on delete
+Yes
+the command with args
+No seed set, uses default.
+no seed set
+index of minimum value
+Yes returns minimum index
+Popup Exception handles exceptions
+No exception handling in front-end wrapper
+Yes creates factory for ThrottledHttpRpcServer
+Throttled Http Rpc Server instance
+Yes produces Throttled Http Rpc Server
+Throttled Http Rpc Server
+Yes
+categories with post counts
+queries data with specified parameters
+returns query result
+Yes executes query
+unique OTU IDs yielded
+unique OTU IDs in output
+Yes
+a formset
+a bson double
+Yes decodes bson double
+to CSS or XHTML
+converts to css/html
+sourcestring to css/html
+token types and content
+Yes validates property value
+staff testing Python code
+No allows only staff
+staff access
+No production testing
+runs code in a sandbox for staff users
+all organizations from backend
+from BACKEND
+No
+all organizations from the backend
+No orgs filtering within microsite.
+callback function every second
+Yes
+To encode and quote unsafe characters in URL.
+Yes encodes ignores unsafe characters
+No
+ast
+invalid lambda
+sure ast ca nt compile invalid lambda
+invalid lambda
+No checks for ipvsadm existence
+ipvsadm binary
+simulates server request locally
+Yes
+server makes http get request
+server response simulation
+returns response content for local server request
+local server get request handling
+number of attracting components
+Yes
+in guid string
+Yes finds guids returns sorted unique list
+GUIDs found in guid_string
+Yes verifies centralizer using two methods
+verifies centralizer using two methods
+to assert transport is not reading in reactor
+Yes
+No actively
+No
+the root SOA for a domain
+Checks recursively for SOA record.
+Yes when weights parameter is provided
+initial weights when max iter 0
+Tests with extended True and False
+URL for OAuth request token generation
+OAuth request token URL with parameters
+Yes
+Yes
+in the image output
+Yes displays chart
+generates chart for specific series question type
+Yes displays chart for selected question
+image
+Imports module runs function
+Yes runs specified function.
+Yes
+all available regions for the amazon cloudsearchdomain service
+Yes
+PascalCase to snake_case
+panel data with grouped observations
+yes consecutive time series
+files marking text or binary
+No
+Yes marks content type
+directories and files recursively
+applies mask color thresholding
+Yes creates masked clip
+where mask is True
+mask where color differs significantly
+Yes removes INITPRE prefixed keys
+keys starting INITPRE
+problem displays correct incorrect blank answer
+No specific answer mentioned
+No calculates next parameter fst
+binary search for fst parameter
+To narrow parameter range.
+a bh lobe pattern for antenna design
+No, sinc function implementation missing
+No retrieves cifar-10
+the cifar-100 dataset
+hann window with ones in middle
+window
+no
+Yes
+Yes applies operators to Mul expressions
+operators to expand muls
+No specific rule shown
+map function call
+No
+map of url to function
+Transformations map_url_in can reverse.
+maps application controller function
+Yes checks for wide angle
+wide angle if dot product is minimum
+point with wide angle
+the widest angle point index
+Checks for wide angle efficiently
+Yes attaches json points
+a json points representation
+Yes retrieves metadata
+registered option value
+from list to set
+checks if partition satisfies alignment constraint
+alignment requirements
+checks partition alignment for part_type
+Creates a custom JWT token for Google Identity.
+No secure encoding; uses base64 instead.
+frequencies
+Yes
+insert bigger b add
+No replaces working code
+No error expected
+insert bigger b add raises exception
+a+b with new apply node
+Yes
+constructed query part
+Yes draws rectangle using characters
+a rectangle using drawing characters
+single instance by ID or name
+instance_id if unique
+container root directory
+No creates if not exists
+Yes into two lists
+prime factors and coprime elements
+Yes computes shortest paths
+Bellman-Ford and Dijkstra
+reweighting and Dijkstra's for shortest paths
+Yes requires package list
+a list of packages to install
+No
+via get credentials function
+get_credentials
+string with escaped quotes
+Yes quotes and escapes backslashes
+preserves query parameters
+Use urlencode with safe parameter.
+host and port
+Yes
+host and port from address
+uses JPEG header check
+No
+JPEG format specification
+No checks fixed position
+No fixed position for jfif or exif
+first two bytes
+magic bytes check
+JPEG start marker
+JPEG file recognition
+course enrollment for user
+No object represents all data
+No retrieves single enrollment
+serialized enrollment data or None
+extra spec value or default
+extra spec value or default
+To ensure string is unicode and properly indented.
+translation repository
+Yes if permission granted
+instance lock for synchronization
+Yes synchronizes method call
+Yes
+orbits from degree generators in a graph
+Yes gets safe repr
+safe repr of obj handling text and bytes
+rarefaction data from files
+Yes
+fcntl flock for locking
+No direct input from gen_payload.
+the value sent from the user ms module menu
+expiration time for a key in seconds
+Sets expiration time for a key
+Yes sets key expiration time
+No adds uninitialized memory.
+expands tensor with empty entries
+expands first dimension
+to the end of tensor var
+No handles only valid JSON
+hug types json
+valid JSON inputs
+Yes
+data into byte groups
+Yes finds flow value
+maximum flow value from s to t
+Yes checks
+Yes
+self-dependencies
+dependencies and variables
+Yes if possible
+dense tensor if sparse fails
+Yes retrieves OS type and version
+operating system type and version
+directories recursively
+aggregates query with project scope
+list of module paths
+Uses decision function or predict_proba for predictions.
+when feedback received
+Generates XML for libvirt volume definition.
+lines from file
+shrunk covariance matrix
+a variable-sized LinOp with optional id
+list of tables
+memoizes stacks by caching tensor indices
+uses caching to optimize tensor operations
+memoizes using intrinsic key maps for tensors
+Updates JNDI binding value in JBoss configuration.
+Action Manager class or raises ImportError
+action manager class from module
+mlp with discarded second input
+by ignoring second input
+Generates or retrieves a hash value.
+domains matching certname in lineages
+decoder via alias
+To prepare for installation
+SSL certificate file in search path
+double - quoted yaml string with correct escaping
+two additional characters for quotes
+text into double-quoted YAML string with correct escaping
+when a " ! float " tag is encountered
+functions with argument names starting with specified string
+a client service instance
+plate data
+shell commands
+Generates random string based on length or entropy.
+in table schema
+index on specified columns
+a policy index or base policy string
+to numpy arrays
+a gaussian random partition graph with specified parameters
+WAV file data into array
+dictionary with distribution info
+a single multipleseqalignment object
+to apply changes from discovery
+never calls anything
+a test user without moderator permissions
+long words without spaces
+breaks long words into shorter segments
+Python source file suffixes
+Celery worker
+feature enabled before view function execution
+stim steps
+to return model directly without instantiation
+skip conditionally
+test if condition or bug
+prints and returns esx host and vm links
+daemon reload needed for unit file changes
+Checks systemctl status for daemon-reload.
+control char or character representation
+test
+the tv platform
+directories and files
+Node and links based on type and parents
+nodes with links and parents
+a list_user_unsubscribed event
+index or -1
+list of arguments and count
+args and extra count
+tuple with index doubled
+xontribs and packages wizard
+incorrect return type
+a user dictionary
+class definition from file
+class definition from file
+total trainable and non - trainable parameters
+a database URL
+a new collection with summary
+Tests saving, updating, forum stats.
+nothing if true
+reader for data_format
+Checks float16 exclusion
+into directory and file name
+discussion component to page
+user or profile
+to remove specific keys
+repeated results in numpy array
+system info celery versions
+displays info warning critical messages
+inside the wx mainloop
+to be run inside the wx mainloop
+until platform is not win32
+No direct effect until printed.
+No side effects until printed.
+in a terminal that supports ansi escape codes
+No effect until printed.
+Using ANSI codes for text color.
+adjacent loops
+another loop
+the description of the specified key
+file path parts as arguments
+file content at constructed path
+environment variable or default
+to execute tensorflow operations
+junos-eznc or jxmlease or proxy
+a behave model from table
+Generates tasks clears local tasks
+powershell query with fields
+files listed in TABLES
+obj and kwargs for callable checks
+uses callable with kwargs
+documentation
+documentation with livereload
+when livereload is dirty
+live server
+twitter username format
+cleaned and validated username
+django template Library
+returns a new Library instance
+when types are inferable
+the file notification service
+z component of cross product
+incomplete accounts
+temp dir dmg
+function
+attachment specs table with InnoDB engine
+local path to EEGBCI dataset
+coupon info by id
+diffsets with interfilediff isnull
+Binskim analysis on sample
+means from each channel
+when an api token is created or updated
+a function to be called at specified intervals
+at specified intervals
+package name class name description
+Have I Been Pwned sensors
+Executes Hadoop DFS command.
+all hash values
+all values of a hash field
+a l1regularizer
+when debug level exceeds
+Joins version parts
+deletes global app and filter factories
+theme XML to file
+pending server manager reboots
+tracing
+a new group-volume type mapping
+arrays or kernel
+web specific fixes to font unhinted family name
+to improve web font rendering
+a remote method
+To configure shell environment variables.
+shell environment variables
+policy record for target
+locales not configured for translation
+a translation matrix
+placeholder
+Decreasing candlestick data.
+ISO 8601 time to datetime
+via Forget
+decoded file path
+a new ipsec policy
+Sets URLs, titles, descriptions, content, and navigation.
+Extended global context with page variables
+expression into matrix blocks
+'en IN' or 'en'
+bench app directory
+mounts cpuset cgroup
+to show oauth application details
+xml filters integrity
+flocker-client package
+Email with disk full alert
+a unique layer name
+IsSuccess attribute indicates success
+operation success
+string to rgb array
+hex to rgb
+queries component by name
+sets sendgrid email manager
+Virtual Box Guest Additions are installed and system state is correct.
+extra model fields from settings
+converts f to tuple recursively
+for volume mute
+computes by hv type excluding disabled
+reusability
+at all
+Checks path existence without altering state.
+os module checks file existence
+a check function
+reusability
+os module
+No
+filesystem state
+notification
+font features text
+sleep function repeatedly
+namespace declarations for prefixes
+value is unicode string
+Commands passed as list to napalm call.
+comparison result of two TP Params
+password strength based on criteria
+Updates config from environment-specified files
+serial correlation for given lag
+clears cache for tests
+a Block Device Dict for an image
+the algorithm specifies fixed prime/generator
+fixed group information
+cookie by setting past expiry
+Sets max age to 0 and expires in past.
+a fake service orm instance
+eip address info by allocation ids or addresses
+writes joined data as string
+user
+config root path with optional append
+recursively copying and rendering files
+Iterates through revisions files checks existence logs processes candidates
+HTTP date string from datetime
+android check
+on android
+Android platform and environment variable
+tree with macros
+Restricts characters to valid or mapped ones.
+strings or lists of strings
+Imports and gets IP resolver function.
+element el at start
+style setting value
+Creates task message with JSON serialization.
+system data path for qutebrowser
+Keepalived configuration
+IPv6 address assignment and routing
+Compatibility for stopping containers.
+sequences into conjunctions
+a pyramid request object
+protocol and trailing slash
+from each split segment
+the owner SID
+if any terms are pandas objects
+opened in read mode
+avatar image or default icon
+transformed items
+md5 hash of input string
+initializes MongoDB instance
+During build start initializes MongoDB.
+set random seed
+consistent bootstrap samples
+random seed for reproducibility
+np array or cast
+an empty QImage object
+unwrap shared params
+discrete lyapunov equation solution
+hook to adapter hooks
+registry lookup method
+registry lookup 1
+to find and add hook
+uses a serializer
+msg module timestamp into log
+2to3 fixers for source text
+2to3 tool
+At task execution start
+specific op class ignoring clients
+owner or clients
+tracked
+path truncation
+Creates schema by flattening and combining keys.
+a persistent job guid
+slack properties section
+custom-message
+all deployments for a given apiid
+FLV metadata tag to stream
+users not in new_node subscriptions
+users without read permission
+users without read permission
+Checks permissions by comparing subscriptions.
+entity property names
+frozenset of serialized property values
+string conversion of predefined units works
+beta t
+two segments at split point
+by key presence and value equality
+a file log observer that outputs JSON formatted log events
+to update to specific revision
+computed values from callable or nested dicts
+cross product of intersections
+Executes Python code in a new namespace.
+when starting from gcrs
+to prepare course for grading with specific policy
+sets grading policy in cache
+a value < 1000 to english
+report with subprojects
+fields with unicode kind
+unicode fields
+numpy array with specified dtype kind
+object dtype creation
+mixin cols['m'] dtype kind
+attributes like dtype kind
+strategy and individual using log-normal distribution
+mutates strategy and individual.
+force key or errors in pillar
+Returns discovery subreddit IDs
+discovery subreddits IDs
+subreddit IDs
+filter and return subreddit IDs
+RuntimeWarning in numpy lib nanfunctions
+numpy lib nanfunctions
+group command
+defines click group cli
+indices below max_b
+sets layers list empty
+from set
+bfs traversal starts
+from source to neighbors
+single address for jvm package name
+single address from specified families
+populates series fields based on parser
+module path with joins
+ndimage mean and var
+mean and variance for labeled regions
+alias target pairs
+parsed aliases file
+uses tilde color
+special home display
+adds directory to namespace lookup
+a map snapshot or error response
+in devappserver
+string s
+non-empty string
+closes all pools clears groups
+in the specified window
+blob publicly accessible
+Based on first item type
+in quota_usage
+resource usage
+a path from node 1 to node 2
+prefixes variable with 'irc ' if string
+When server is youtube
+To check and stub server requirements.
+until queue is empty
+enumerates supports computes equilibria
+a mugshot image with hashed filename
+generates hashed path
+mugshot image to userena path
+via sysexit code
+weighted edges
+Ensures job is absent from schedule.
+the freesms notification service
+sets metaclass in class dictionary
+Wraps class creation, injecting advisor.
+To advise class creation with a metaclass.
+Checks for DISPLAY and DBUS SESSION BUS ADDRESS.
+summary into three dictionaries
+computes expressions, names, and substitutions
+The unchanged argument
+http:// for filepath-like or missing scheme
+To ensure valid URL format
+complements codons
+data in pickle or raw format
+symbol or code
+Adds currency symbol or code to string
+currency code
+default currency
+sets hostnames for a name correctly
+temporary fixes to font data
+descending
+locale ident scores higher
+Documents with highest score
+text positions
+unwinds phase angle of complex number
+address to string
+headers dictionary
+cursor position and buffer size
+fills from nested rings
+group policies and members
+conda installation prefix or None
+prefix
+conda prefix path or None
+creates logger with specified configuration
+coordinate data into two dictionaries
+convolution
+max data extent for layer
+data shape
+edges and nodes
+over edges of graph G
+on data and accuracy layers
+modified network object
+returns utc time with timezone info
+current UTC datetime
+a smartos package to be installed
+volume swap notification
+calls : gtk main quit : on delete-event and clicked
+not connected or destroyed
+course block status based on registration codes
+list of audio output modules for VLC instance
+channel mode
+price info for product based on shop customer quantity
+cursor position over video
+from the media player instance directly
+to clean an instance
+sudo clean script
+ssl host for emr in region
+matches region's ssl host
+sandbox assets list
+xml lines from source
+None or error message
+json
+a block storage volume
+Variables with new values
+git reference
+cygpath for path conversion
+the rackspace queue is created
+Writes files if content changed or not forced.
+Files with updated content to output root.
+tensors along specified axis
+matching tuple or None
+set_partition_with_missing
+ApplicationNodeDeployer
+default missing value for dtype
+database URL from Firebase config snippet
+Bootstrap alert with optional dismiss button
+timestamp of last update or -1
+Calculates distance-based potential using numpy
+Bookstein's U function
+locales sorted by visits between dates
+matches m of n multisig
+matches m of n multisig format
+api-url test-tag prod-tag namespace auth-token
+Tags images in openshift for deployment.
+tags for images in openshift imagestreams
+a python version
+filters with debug level below given
+filters with max debug level
+the x - axis for violin plot
+dictionary of package statuses
+sorted list of header elements
+sorted list of header elements
+when import statement is complete
+serialized preferences for the user
+account
+terms containing simple kroneckerdelta
+terms with kroneckerdelta
+loops from centers
+sets console cursor position
+console screen
+AVAILABLE LANGUAGES dictionary
+sorted language dictionary for locale
+binary operator handling
+SCHED_REALTIME SCHED_FIFO
+No
+realtime argument not used in scheduling
+No exceptions raised, returns True or False
+valid path specified
+a bson boolean
+No match
+pattern
+the string
+special characters for shell safety
+string wrapped in single quotes
+no special params required
+a test blockdevice_id
+real blockdevice_id
+test creates blockdevice_id directly
+No direct use shown
+skype CALL method
+cursor offset in console
+Checks each path for existence
+Unix socket file in known locations
+extracts default values for function arguments
+Updates error suppressions based on NOLINT comments
+number of digits in integer
+acceleration times distance over velocity
+the description for multiply
+available distributions with Dockerfile
+formatted type and value
+Python files with bear classes
+differences between two sets as _ idiffchange s
+Not explicitly listed; inferred from command output.
+validates VDI timestamp, ensures correct host time settings
+timestamp and other metadata
+a dns class
+counts total parameters in layer
+consistency between builtin and download registry
+last function call
+salt Returns find one
+lookup row by column value
+closes figure instances based on input
+metadata for SPIR kernel
+correlation row generator producing category vectors
+Initially cleared
+when HAS PATHLIB is true
+metric descriptor for scribe messages
+from remote to local
+a BindParameter object
+env - script
+line starts with prefix
+waits for specific stderr output
+volume type associations for qos specs
+compiler instance for building from distutils
+variables for MSVS build
+for generator and msvs version
+the tag
+a toc element
+datetime object
+data and subdirectories
+own studio page or children
+xblock with unit parent or children
+gzip and bzip2 compression options
+relpath to site, main siteurl, main lang, lang siteurls, extra siteurls
+permission to edit the workflow action
+user can edit the specified workflow action
+action permissions
+parse string function
+template variables in the string
+reinitializes gevent hub
+reinitializes hub components
+process tree by pid
+attributes resembling subclass relationship
+Handles non-serializable objects
+json encoder
+a key policy
+votes cast by user on objects
+on a particular object
+a single element
+one element matching the path specified
+the specified path matches an XML element
+inclusion_no_params_with_context _ _ doc _ _
+unique indices
+duplicates ignores uniqueness
+snapshots directory
+paths to snapshot files
+build
+gridlines with NaN handling
+binary mode attribute
+fileobj
+on host servers
+translation files for all apps
+sdist package to location
+to specified location
+the local user
+different ra dec distance
+Handles feature permission requests
+subdirectories and files recursively
+when function is called
+function arguments based on flags
+disables signing by returning sentinel
+sets signing to UNSIGNED
+returns UNSIGNED for botocore
+32 for 32-bit systems
+32
+sysbench performance with varying threads yields locks
+aggregated records to output
+datastore reference
+to manage datastore operations
+returns Swift 3 Middleware instance
+paste uses the middleware function
+region is None
+configures Bokeh plot output file settings
+masked values with fill
+Mattermost username from config
+starting after joining
+Container view for specified object type
+Not explicitly in this code snippet
+converts unicode to bytes
+text to utf-8 bytes
+github link to document in context
+test copy without render directory if it exists
+symbols of the coordinate system
+alert confirmation email
+cleaned and sorted order
+parsed template
+switchport details for specified port
+to a boto3 list of filter dicts
+Ansible dict to boto3 filter list
+lowercase, no spaces, before plus sign
+ensures cleanup after function execution
+all regions for cloudwatch using CloudWatchConnection
+dash characters for formatting
+Outputs comment with dashes
+a derived function definition
+type mismatch errors
+to preserve original function attributes
+creates secondary y-axis
+y axis with first axes
+video params sources
+video html markup
+compiled regex for matching
+by percentage variance scaled to max variance
+date to integer key
+to convert group name to gid
+active file name
+principal components of data
+IPython shell or standard shell
+source filename for compiled or java files
+normalized absolute path as bytestring
+values smaller than eps with zero
+completion instance or raises error
+data : for url
+SSH connection to master
+states list for environment
+Sends request reads parses JSON
+source destination pairs
+preview if plugin enabled
+tests cleanup handling
+wiki or write permission
+friends list
+Sends ARP request with optional source IP.
+the average log loss
+a stash view dialog
+initializes model then shows stash view
+to send a message to a chat
+a new condition variable
+a list of page where the user can move pages
+webapp on random free port between 8000 and 10000
+a valid short number for the specified cost and region
+tests pmf hist function with basic assertions
+environment variables and user home
+a group snapshot from values
+Redirects imports to fake modules.
+During context manager execution
+Redirects by replacing sys.modules entries.
+fn with each bit set in n
+base32 encoded secret
+transposed stacked arrays
+category object
+retrieves Category instance by slug
+scoped nodes
+OrderedDict attributes not inherited
+No
+fused key names
+name and steps
+# lines
+virtual interface by UUID
+symlink existence, target, ownership, force removal
+service details by host and binary
+clears matrix with color
+specific cert or all if none specified
+on build failure
+via blame upstream plugin
+Yes
+editable status of exp_summary
+By being an editor owner or community-owned.
+Check URL for valid QuickTime MIME type
+memory extents for array based on strides
+the class that a method is bound to
+Adds userdata to options
+partition and filesystem
+weights and cost functions
+before cleanup
+uppercase variable names match class names
+graph cache access token
+symbols with polar=True
+method declaration or override keyword
+to adjust divisions based on frequency
+pd Series for shifting divisions
+when freq is anchored or has no delta
+pandas DateOffset or string
+formatted speed string
+speed in kbps
+raster data
+a function to encode strings with XML char references
+subsuite tests
+list of shows and their episodes
+wanted episodes
+field name lookup expression
+user registration
+elided text matches expected conditions
+the automate notification service
+indexes
+index definitions to keys
+on acme server
+nothing
+event time
+every argument contains spaces
+arguments with spaces
+function argument names or partial function keywords
+uses Krogh interpolator
+Taylor polynomial coefficients
+returns package names providing command
+package names for command
+user ids for roles
+parameters from stdin or file
+constructed dynamically based on timestring
+since server start
+server start time
+updates files matching patterns
+in the zip file
+user profile links
+XML Test Runner stream for test results
+user data directory for module
+nearest statement parent node
+current view
+path to loops
+path
+in git repository
+When integer is 1
+sorted dictionary params
+dictionary to query string
+method from module
+the web server mode
+system running state
+portfolio citations projects summaries
+wav files and segments
+evaluation results for speaker diarization
+default hyperparameters
+print_timing decorator
+function or message optionally
+redirect URL
+registration codes filtered by company name
+returns Collection object by alias
+main running hub lockfile contents
+an appscale user
+time override
+constant term if miv zero
+a hardlink from volume_path to backup_path
+To check if value represents true.
+billing positions then names then IMDb indices
+billing pos then name then imdb index
+matched route pattern
+route pattern
+applies function expandingly
+base64-encoded sha1 hash
+incorrect base64 encoding method
+in graph6 format
+decoded integer and length
+a variable-length integer
+label files or paths
+In subject's label directory
+memory operations and scopes
+a compiled device function template
+to rgba color with alpha
+a new personal stream
+Error events
+in the publisher
+On error event
+pattern presence in en module
+True if import succeeds else False
+var to model potentials list
+HCP MMP parcellation files
+Tkinter widget update loop
+resource url path
+path does not exist
+specified process running check
+on the specified node
+pandas DataFrame column access
+a bit to bit or of provided addresses
+users with rights for specific shared document
+Reads sparse6 format graph.
+xmodule urls
+wrapped in render to response
+javascript file wrapped for requirejs
+rendered xmodule js template
+IPv6 address
+EUI-64 component
+the python revision number
+repository categories
+API Error instance
+sets migration status to error on exceptions
+task family and params
+task family params hash summary
+Java method object from gateway client
+the beacon configuration section
+Calls function by name or digit.
+flocker cli package
+redundancy coefficient for nodes
+redaction rules from dictionary
+Parses search, replace, case sensitivity.
+the intersection subtracted
+the style and rc parameters
+roaming status
+telephony Manager
+macro test with print statements
+check if year is leap
+network addresses todo
+Assets Extension to jinja2
+Adds AssetsExtension to jinja2 extensions
+layers weights biases
+file contains multiple features
+latest configuration data from memcache or None
+when replying to a message
+Django Translation object
+to global translations dictionary
+review request object
+review request object
+ec2 client and validates region/zone
+mock function uses mock to return token
+mock function
+volume description dictionary
+random permutation list
+Filter unmerged paths using is conflict free.
+checkout cache
+returns nearest sentences with scores
+global ENGINE and SESSION variables
+next ip address
+user email if valid unique
+exc
+tagged words with gold and predicted labels
+http url if missing
+list of model classes from modules
+when jid matches
+renders admin index page
+base html with context
+entries with no valid foreground or background overlaps
+Entries with no foreground or background ROIs
+image path, width, height, max overlaps, max classes
+using metadata and parameters dictionary
+postfix package
+1 minus exponential decay
+views method kwargs
+sets ASN1 named curve flag
+in ec cdata backend
+checkbox field for consent
+Adds data sharing consent checkbox field
+kth standardized moment of xs
+Records user-agent locale src
+to magma
+named or numbered group to extract from string
+in the pattern passed to re search
+directories for requested and active instances
+directories in cachedir
+directories for requested and active files
+new filename replacing old
+in venv directory
+letsencrypt-auto script
+on MessagingException
+Retries function on MessagingException.
+access to the given course arguments
+access course despite restrictions
+access based on IP or profile country
+named ports list and dictionary fields
+pip freeze pip uninstall
+PACKAGES TO UNINSTALL
+defines volume from XML in specified pool
+word vocabulary from PTB
+a size block for the current block
+the beacon configuration
+host groups matching criteria
+browser model or fallback
+to verify file integrity
+'default'
+Sets 'default' as active privacy list
+index of procedure done in text or 0
+deprecated keyed md5 hmac
+IP addresses excluding loopback by default
+in a chain with subtask
+compiled regex
+Google Calendar Event Devices
+tree structure
+Writes Nexus formatted trees with labels.
+Trees and tax labels
+NEXUS formatted strings
+range keys from sample output
+binary config paths
+warning message with optional file skip
+skip file is True
+f
+no
+event handlers
+called variable checks
+delegate type determined by IronPython Test Event
+Prevents removal if delegate not strongly typed.
+sets repository directory path
+array of ranks for fitness values
+time-based cleanup
+empty directories and invalid hash files
+file and directory cleanup
+file descriptor
+output folder if it exists
+claim an unclaimed user on a project page
+sets instances on server version
+Translates coordinates to A1 format.
+dot at line start
+Never
+demo weather sensors
+objects of specified type
+service system manager object
+processes file for uploading with optional filters
+compresses encrypts and limits rate
+a pipeline to process a file before uploading
+python values
+Original arg after all functions applied
+current mute status
+when a mailbox number is picked
+agent build by hypervisor OS architecture
+at the offset
+primary and pyname
+text is properly bidirectional
+to handle Arabic text direction
+membership in specified group
+updated with hook kwargs
+on sep
+lines excluding comments
+wire data into message
+built samples from templates
+repo to specified commit index hard
+to committish
+compiled regex to match blacklisted words
+Columns and data correctly
+polynomial to ANP format with domain conversion
+Returns quality of mime - type against parsed ranges
+from time object
+after user instance is created
+a pool add cli example
+Newrelic and profiler middleware
+the hamming loss for predictions
+to escaped non-ASCII characters
+formatted certificate output
+a grader object based on configuration
+missing file argument check
+dictionary with attributes
+Displays topo plot for picked channel
+not directly shown
+content ratings saved
+api checks content ratings
+lowercase gl
+GL functions and constants
+oauth parameters and custom parameters
+a deep copy
+serializes then deserializes object
+individual values for rastrigin function
+Ordered Dict from YAML lines
+words
+truncated words
+a colon-separated hex string
+creates dummy variables dropping last
+creates dummy variables
+dat ascii read
+hop-by-hop headers
+the scaling of the * x *-axis
+a timestamp value from the given ticks value
+negative sentiment words
+PID lock file for absolute path
+lines matching expected pattern
+mark file
+local and global bears
+local and global bears
+that resource has been replaced
+packets matching filter
+absolute error
+channels languages
+channel language pairs
+for rendering JSON responses
+items with separator until max chars
+Syntax error in zip usage
+email body
+field precision or default
+to get specific python executable version
+False if classes differ or not unified
+False
+not unified in this code
+all host groups
+tile body or None
+In function/class bodies, assignments, imports.
+ast module for parsing and analyzing Python code
+latest non-cancelled asset log entry
+episode as failed
+validates Transifex config
+Yes
+hostname or None
+http request headers
+S3 key object for file
+API version from discovery service
+selected radio plugin if exists
+during shutdown
+before modifying host locking status
+creates adds option to current statement
+file content directly into memory
+the SHA-256 hash of a file
+reads file in chunks of 65536 bytes
+Uses SHA-256 and larger chunks.
+No
+tenant info fetched from conn
+to fetch quotas
+tenant quotas from connection
+using named vip foo
+NQueensCSP object with constraints
+In lines split by newline.
+function prototypes
+image files for processing, handling stdin if specified
+Page model's content type
+text up to num_words words
+paragraph tag is correct
+html text
+visibility of user profile
+as a list
+HTML formatting for processor decline message
+fix osmesa gl lib if testing with osmesa
+a signature scheme pkcs115_sig_scheme
+Horizontal if mode horizontal else vertical
+seams horizontally or vertically
+a tool state
+Kaiser criterion for factor retention
+stack manipulation and argument assignment code
+a random upper string
+text body
+a value or an id
+a permission grant
+invalid import syntax
+report of non-ignored messages by occurrences
+this version
+no errors inserting
+No errors if idempotent
+when store friends method called
+collection rights
+dataset directory path
+host groups
+a single show object by indexerid
+a tenant
+converts minute to session data
+missing function calls
+tuple of default column headers
+deviance information criterion
+Launches iohub server with keyboard device.
+a filtered postorder list
+Nodes passing filter func condition
+nose tests
+func call or warn call
+Deprecation Warning
+an empty entry
+func
+AssertionError if no exception
+No assertion error if func raises exc
+a shuffled random password
+complies with complexity
+lower upper number punct
+nothing
+first element
+RSA object with key data
+RSA object from tuple
+a disk snapshot with description
+grain value
+Removes spaces trims lowercases
+Unicode to byte string
+chains of references or backreferences
+Calls IMPL network create safe with context and values
+a newer than b
+over moving averages of window size k
+the nest thermostat devices
+torrents' large files by size and name
+path to binary using shell
+users list
+converts backslashes to slashes
+converts to InstanceGroupConfig
+converts to InstanceGroupConfig
+the virtual module
+Until garbage collected
+Leaks
+garbage collection
+not calling keep alive
+a base64 encoded hmac signature
+retry mechanism
+result of func
+SSL login handler
+a soundcloud playlist item
+shop-specific configuration items
+sequences with hubs at midpoints
+copies repository to temporary directory
+ordinal of namespace string
+TransparentProxy object with forced host and scheme
+names titles characters references
+compiled function object
+default address template string
+sets inputhook to null returns previous
+disable input hook allowing CTRL+C
+dictionary of initializers for specified fields
+user choose folder
+list search packages
+command to start python 27 appserver with specific parameters
+returns an undirected duplication divergence graph
+preferential attachment with duplication divergence
+files with given suffix
+Resizes images and computes differences between them.
+images to resized images and differences
+sets vlanid to unused
+vlanid state set to False
+Table with many rows
+sorted matches for EMR logs
+all specified GIS lookups
+Distribution Not Supported
+outer HTML without closing tag
+Working directory integrity
+No break in casefold
+tempfile mkdtemp
+screen conditionally
+sys meta path entries
+in sys meta path
+database schema
+conditional response object
+Sets headers based request
+True or False
+an object holding a time value
+class object or Class Alias from loader
+home directory
+difftool with head files
+server URL and session ID for Bokeh server output
+session document
+index after set closing bracket
+deepcopy and normalize acl for comparison
+pending windows update reboot
+Initializes Color object with name coords and colorspace
+from data or creates new
+Removes file or directory at path.
+removal commands
+joined with spaces
+vlm_media instance chapter
+generates nested result expressions
+the enocean binary sensor platform
+current user id
+new object if not found
+django ORM
+renders with prepend/append
+to adjust based on number of rows
+Pearson's median skewness coefficient
+python file paths
+random state for device or global if none
+confidence intervals for array means
+a qwebview object
+volumes or their IDs
+main loop with gradient descent
+formatted string with longest span
+human-readable text
+tag count
+list of human-readable labels
+a wyr title and choices
+fractional power of matrix A
+marker environment override
+specific svg files
+standard error of the mean handling NaNs
+local identifier from service element
+tokenized source with transformations
+tokenizes source applies function f untokenizes result
+nothing
+a routine using specified code generator
+from an identifier
+Creates and cleans temporary folder.
+document object by name from registry
+gravatar url for profile picture
+profile picture data url
+host datetime to current UTC time
+computes p-th moment of circular data optionally centered
+when depth reaches zero
+real ip x forwarded remote addr
+real xforwarded remote address
+Base64 encoded 256-bit AES key
+Base 64 encoded encryption key
+authorize user access
+nodes
+configures GAE environment using SDK path
+sets up gae environment with specified sdk
+node addon folders
+folders list
+unpacks tar or zip format
+course id and grading config summary
+gl backend
+When the pidfile exists normally
+interface presence
+returns settings as dictionary
+channel object or none
+renders shoppingcart/download report html with context
+systemd target to runlevel
+target to runlevel
+distinct project counts with bugs
+compute API class name based on cell type
+data or error message
+static resource path
+Identify error user path
+Function called in methods
+Within methods of klass
+the pip version
+file captions
+end of data
+Updates or adds service configuration.
+HTTP POST request
+sends a POST request to unfollow URL
+publish progress asynchronously
+expands relative URLs
+derivative operator for M with simplification
+to create column index preferences
+coord trans fid trans end
+function creates modified string
+javascript catalog for all apps
+a list of admin apps
+after it
+sampling table for negative sampling
+a script file
+popen stdout read
+pmonitor function
+not on Windows
+non-Windows systems only
+Hamiltonian Monte Carlo move simulation
+a quote from db
+to reset and reinitialize disk settings
+limits dictionary
+dataset
+unique value at position b
+Maps category to label index efficiently
+shortest weighted paths from source
+get instance method
+get_cached method to fetch cached ForeignKey instances
+To cache and retrieve model instances efficiently
+model instance
+loads YAML file optionally instantiates objects
+profiling the SP compute method
+numpy random randint for data generation
+scan data and error messages
+added/changed files list
+removes -isysroot flag if SDK path is unavailable
+matplotlibrc file path
+property values matching predicate
+predicate
+down
+file with stored checksum
+a stored md5 checksum file
+a zone
+random samples without seed
+different results
+always yields different results
+COLORS dictionary adds codes
+color formatting
+that dirname contains template placeholders
+python interpreter usage
+Adds newest and oldest commit SHAs to content metadata
+determines date before offset
+a backup entry in the database
+Tomcat version from script
+No
+csrf token
+a view
+unknown activity type
+Yes retrieves rights based on activity type
+raises an exception
+grading policy for specified course
+Yes
+nothing stores matchee directly
+When original has mismatched attribute set to marker.
+mismatched marker if set
+by area descending
+sorts in place based on area
+Counts occurrences of lun ids
+Counter object with usage counts
+Environment variable for port
+bytes to human-readable form
+the specified subnet cli example
+to parse and delete an asset key
+down
+by email
+gcdex function to handle multivariate polynomials
+to specified dtype
+wikipedia suggestion for query
+a sobel filter along specified axis
+first num elements from iter
+via cygwin setup
+page arguments
+transformed zeros poles gain
+random shapes for testing
+legal catalog entries
+the hydroquebec sensor
+data
+replaces secrets data
+constraints for weighted geometric mean calculation
+To represent tree structure as matrix constraints.
+readability
+tracks to delete add keep
+in a loop
+returns data dictionary
+module data dictionary
+returns data for a specified module
+a constructor for binary geometry data
+specific criteria for manage function
+Open-V type, valid size, ports.
+custom draft with custom body
+raise if offline
+Code marks non-GT proposals overlapping with crowd as -1
+a cache region
+unique vertexes
+nltk corpus wordnet morphy
+WordNet's morphy function uses POS tags
+a new dict with unicode keys and values
+type
+selector instances
+where nodes are independent
+independence between a and b
+independence check
+Yes checks independence
+renders csv stats with headers
+vectorized membership of x in y
+the number of solutions created by user
+formatted state result dictionary
+network configuration file
+when grouping and rule are specified
+uniform partially matched crossover with probability indpb
+sublist in place
+all transformed vertexes
+our new " cos " function
+key value from CONFIG
+Splits text converts parts packs bytes
+del SEMAPHORE MAP[path]
+tables to table all
+creates user directory
+Broadcasts by invoking fanout
+conf mappings
+enforces nice config in portage
+variables to restore
+When retcode is not zero
+Rechunking test using Dask and NumPy
+executes reset commands on model's SQL connection
+to reset model's id sequence in database
+JWTError
+new devices in OS
+in /sys/block and /dev
+to identify server or instance
+user lines grains
+converts restructuredtext to markdown
+Uses pandoc subprocess
+a dummy VM
+LLVM JIT compiled function from code
+special characters
+nothing
+via threads defer To Thread
+minion entry from cachedir index
+plugin directory structure
+directories are dynamically emptied before testing
+not specified
+tar files with relative paths
+Under adir in base backup
+directories when partitioned
+single game or None
+one game
+redirect entry should override
+redirect updates added overriding
+tuple of two strings
+followers
+a tgrep string into separate tokens
+converts string(s) to instrument object(s)
+to instrument data
+live config section values
+Extracts live config; validates by parsing.
+firefox android
+redirects dictionary with transitive closure
+transitive closure of redirect relation
+when loading a description by key
+object has specific permission
+renders openid form or redirects
+user preference value with validation
+tests distance differences between frames
+opening accounts with balances
+in the worker control function
+to stop the worker
+network interacting function with retry and timeout
+queries links
+storage profile spec by unique id
+searches items based on type or value
+Job Log Logger Build Wrapper
+Enables job log logger with suppress empty option.
+suppress empty logs
+suppress Empty text element
+generates vlan device name
+quota usage record for project and resource
+assert methods from module 'a'
+tags list
+filters by %IDENTITY
+% identity
+in order to sort endpoints in descending order of segment length
+by segment length ascending
+to milliseconds
+compensation data for ctf coils
+Removes non - cache files then directory if empty
+text without credits
+Removes lines containing 'lyrics' case-insensitive.
+sensehat display
+image
+Filter and return valid recording directories.
+data dir
+filtered recording directories
+in specific headers
+histograms of gradients and their norms
+a GCE static address
+before built-in modules
+the options for the jnap filter jnap : joint national action plan
+SHOWVARIABLES query results
+to course and entrance_exam content
+milestones and content milestones
+credit course requirements from xblocks
+task name from class and addons
+a postgres group
+contiguous arrays
+simple_one_default _ _ doc _ _
+Yes handles combined
+text parameter handling
+non-string text matching
+Eigenvalues magnitude
+via LTI launch request handling
+all tags in an html tree
+Incorrect approach for conversion
+by adding xhtml namespace
+sysrc variable is removed efficiently
+process call runtime duration
+response to message
+required and additional parameters
+required parameters presence
+trade protocol including price volume datetime
+if value can be split and stripped
+the oauthauthorize cgi
+Objects with history and user data
+quoted word or escaped characters
+rewrites kronecker delta with solved arguments
+rewrites indices using solved equations
+the copyright for the given profile
+a column number to letter
+No bitsInit handles exceptions internally
+bits Init failure handling
+bits module
+initializes bits DLL if available
+bits++ not initialized in shown code
+Depends on Windows version and DLL presence.
+area of absolute values of complex path loop
+to enable secure cloud storage access
+ticks and frame
+config attribute temporarily
+pytest request object
+Pytest Arg object for accessing pytest arguments
+offers pytest argument parsing
+records pytest hook calls
+incorrect fixture definition
+the mysensors platform for covers
+email preferences for user with given user_id
+period of audio signal
+db upsert should raise InvalidDataError
+db Invalid Data Error
+the nobody user
+from client API call
+virtual interfaces
+When subclass does not implement method
+renders about page
+creates an input box for text entry
+by walking result images directory
+files ending with -failed-diff
+Matches 'true', '1', 'false', '0'.
+a simple table with no metadata
+status of postgres extension installation
+filtered list of featured activity summaries
+thread and associated message deletion
+When thread is deleted
+chi-square test for proportions comparing pairs with control
+pairs of k samples to control
+Output joined arguments or starts loop.
+iframe or linked content figure
+all available regions for the aws cloudtrail service
+until the file exists
+top creators with user details
+makes forward solution
+Update locales based on app.
+the passwordless login instructions email
+to assign owner of article
+article owner to user's group
+crypto maps not using AES
+crypto maps without AES encryption
+crypto maps not using AES
+CiscoConfParse to find non-AES cryptomaps
+crypto maps without AES encryption
+No AES usage detected
+preferences hash dictionary
+clipped individual
+hexadecimal to ASCII
+testing unpickling without pygpu
+3 vectors forming angle
+3 points forming an angle
+angle between vectors v1-v2 and v3-v2
+names of bands for the mode
+video file for hashes
+model_file
+weights
+url prefixed with skin name
+skins
+default skin content
+dictionary of signal handlers
+purges deleted records from database
+SequenceMatcher for ratio calculations
+best matches above cutoff
+None if socket error
+HICON for module index
+Qt Win from HICON
+when a " ! pkl : " tag is encountered
+keys in subset
+attaches sample info to notification object
+samples
+all ancestor nodes of a person entity
+a matching security group rule
+Composite unit with format
+returns initialized exception class
+specified overlay from local overlays
+using creator function
+unicode representation in YAML
+Adds unicode representer
+expected frequency matrix
+generates signed URL for query-string authentication
+temporary access to a resource
+various objects into serializable formats
+sha512 hash of input string
+dictionary with tuple keys
+fqdn using run command
+list of process IDs in the tree
+generates access token
+identity type or use short token
+function uses xcode version
+uses xcode version to determine archs
+Updates repository with packages
+packages metadata files
+installs package with prefix
+Simulates clean system by backing up user config.
+old files
+writes to data files in last four seconds
+scale positive
+driver names for normal and slave connections
+asserts driver match for master and slave connections
+asserts master slave use same driver
+QMessageBox with yes/no options
+profile and alterations sections
+service not enabled
+down file
+No stop if true
+scalar info dictionary
+Renamed tool name
+func from exithandlers
+nothing if func not found
+No action if func not found
+channel's SFW status
+master status information
+via file descriptor
+a modified filter function
+Adds removes query string params efficiently
+letters numbers hyphens spaces
+design matrix for regression
+During yield execution
+temporary project directory
+between low and high
+integers
+filename and rights
+path to CA certificates if found
+web_server_type for activation
+activation result dictionary
+Event listener for default values
+dataset object
+within data bounds
+window length
+subordinate steps with behave_as
+index of first difference or 255
+the "friedman #1" regression problem
+root level
+existing directory
+rule trigger files
+Lazy Map
+Lazy Map for lazy evaluation
+the windows feature
+C code with placeholders
+IP addresses in range
+repository metadata for missing tool tests
+trace hook and closes connections
+a bytes object from * obj * using binary protocol
+class to be deconstructed for serialization
+to detach from wrong vpc
+sets up Django auth class globally
+a menu item with checks for required parameters
+integer to bytes
+Creates GUI for MRI coregistration
+Deterministic ThreadPool with TeamLockWorker
+the kulsinski dissimilarity between two boolean 1-d arrays
+deletes keyword
+last swap device or None
+text from header's first child
+make default context function
+context and runs event loop
+Window Token List Control
+a static window token list
+non-stepped-on circle intersections
+not specified
+privilege for user
+delivery pipeline plugin for stage task description
+pipeline property for delivery
+metric descriptors
+a netgear scanner
+hidden files names
+XML string with variables
+XML string
+a unique filename combining course prefix, base name, and timestamp
+a service command generator for specific commands
+Service Command Generator with filtered commands
+ServiceCommandGenerator instance with filtered commands
+remote branch path
+remote branch
+stop watching ready l10n revisions
+watching ready revisions for a product
+previous stock ledger entry before current time
+when for update is True
+a package relationship
+invalid css styles
+add missing values
+consistent phrase pairs
+aligned phrases from sentence pairs
+the flic button platform
+inside function docstring
+lines with #doctest +SKIP
+issue details dictionary
+dictionary with issue details
+Applies service availability checks to functions.
+service availability for each test case
+sorted class list
+CORS headers
+Adds CORS headers conditionally.
+after function execution
+a function with garbage collection after execution
+plugin object by name
+when commands download and flush
+support or global access
+support permission
+support
+event source mapping is removed
+ast can compile valid let
+invalid syntax
+figure layout adjusts automatically
+SSL socket if SSL installed
+a continuous random variable with an arcsin distribution
+When archive path is valid tar or zip.
+Extracts tar or zip files into dest.
+file text or error message
+that the decorated validator does nt modify data dict
+None
+a round rectangle
+access to descriptor based on action
+when output is truthy
+function converting setting to typed OrderedDict
+Converts setting to OrderedDict with types.
+HMAC signature of challenge using key
+on extension deletion
+unique hash from content type and user details
+schema is present with correct owner
+scm type
+ValueError
+request options payload
+gated content IDs or empty list
+permission to edit the dataset
+that the user can edit the dataset if not authorized
+Reverts and takes a new snapshot
+Reverts then takes snapshot
+Reverts then takes new snapshot
+to unflag an object
+before the containerbroker update
+small segments into larger ones
+standard config module data
+raises runtime error for unknown failure
+long description in rst
+task logger
+deque chunks with prefix
+a json changes object
+SYNC variable to value
+request
+Yes handles PUT as POST
+PUT method directly
+compares session against expected
+back
+ntp peers configuration
+the smallest scale greater than x
+formatted return probe string from dataframe
+slice with defaults
+modified string or escaped string
+pattern string
+returns sample ID based on barcode correction
+TCP socket with cleanup
+when filtering content
+fixes local path symlinks
+posix local
+posix local scheme
+local directory for files
+CHECK entries for FETCH EXTRACT
+Optimizes, updates settings, aliases, unflags, deletes old index.
+REMOVE THIS KE Y
+empty input
+RSA private key object
+n is numeric
+Converts integer to alphanumeric string.
+Generates colors using Color Spiral
+nodes using mapping
+database links and embeds
+on private IP with specified port
+marker text
+Trace Component DB object
+invalid setv syntax raises compilation errors
+Error handling for invalid setv cases
+invalid or unsupported setv usage
+virtual hosts and their configurations
+Interpolates query using vars
+create identification fields easily
+set label error message
+average or median of values
+container
+all resources
+CRC16 lookup table
+in the browser context
+head file path based on high res flag
+a client for autoscale service
+details of a specific event log entry
+before returning True
+HTTP request and response
+HTTP request and response messages
+converts search string to SQL wildcard
+wildcards to SQL patterns
+multiplies FFT of data
+Applies inverse filter to data.
+transforms absolute paths to relative ones based on common prefix
+a cloud server
+distance to nearest intersection point
+maps cffi type to numba type
+input represents a gpuarray
+'edx cohort created' signal
+when created
+using the warn level
+the warn level
+a single line of the graph g in adjacency list format
+for public extension / version
+filtered relevant issues
+value of specified key, type-checked
+files matching sample regex
+javascript fields require different handling
+to match target_shape efficiently
+a container with specified resources
+self into container
+memory and specific CPUs
+filters by repository_id changeset_revision user_id
+a stopped container name container name or i d * * return data
+a continuous random variable with a Student's t-distribution
+data based on fields
+data fields envelope
+sets calculator function
+when cache deactivated
+in the cluster
+a logical router
+arguments to stderr
+namespace execution to command
+facilities to the database if not already present
+normalize and parse
+fromstring
+when a course certificate is awarded
+when a certificate is awarded
+space or bracket
+host and port
+formatted route body
+moving average of array x with window size n
+sequential adjustments
+list of non-empty non-comment lines from file
+downloads file if missing
+Converts spaces to underscores
+assignment_params_and_context _ _ doc _ _
+inverse function f
+doctest suite
+a symbolic link to target
+cluster with services
+external user
+email for first-time OAuth login
+pre is not defined
+the expression against answer
+sympy for symbolic math checks
+the given node
+tests and profilers
+in parent dir recursively
+folders in directory
+average match strength for each target set element
+a continuous random variable with an Erlang distribution
+formatted qlineargradient string
+a UnicodeEncodeError instance
+unread status changes
+Not rolled in this code snippet
+no microsite-specific logic
+Daily Work Summary Settings
+daily
+alphanumeric strings
+requirements file
+response object
+renders form with custom fields
+custom fields in form
+by updating with partial keystrings
+unjellyable factory for specified class
+unjellyable factory for specified class
+when not in seconds
+for a rotation of theta about the 3-axis
+status code error detail
+OK status code
+hash type and sum
+Method redefined by decorator checking.
+In error processors loop
+valid method calls on resources
+non-callable object passed
+coil locations to MNE format
+return event to pg server
+FCFG grammar for parsing
+Posts reset config request to admin controller.
+body u'id'
+checks if not default process
+process not default
+Factory method creates cameras
+instantiates camera class dynamically
+camera types dictionary
+monkeypatch setattr
+data for efficient computation
+theano shared
+theano shared variables
+Efficient GPU computation
+names threshold lengths profilewidth scores alignments
+names threshold lengths profilewidth scores
+a gemset
+insteon lighting controls
+default binary characters
+property type name as string
+current user if username is None
+edns flags to text
+product of x y z
+when edxnotes module is available
+when edxnotes module is imported
+In object and its contents
+unique object IDs
+number of patches to compute
+stay open
+to restrict record access by role
+program types
+requests based on count and time period
+via gym make
+environment and id for testing
+type
+detects Django project paths
+open badges feature status
+resource view iframed status
+in an iframe if plugin supports
+boolean or none
+the sense hat sensors
+when resources change
+idf score for term
+idf calculation incorrect
+mapping for index and doc type
+by announcement and start dates
+to store sorted dates
+list of service endpoints from XRDS data
+Digest Traverser object
+query is authorized for project
+502 nm
+incorrect
+datastore pb Query Order ASCENDING
+comparison filters and ascending orders
+object info with length
+Meta class with model, fields, exclude, widgets
+dictionary containing form fields
+a record object from given parameters
+es 2 import missing
+text in a dialog with close action
+in a dialog box
+the input broadcastable along specified axes
+Sorcery version
+by spaces using shelllexer
+active flag
+Efficiency for large connections
+aliases for a resource ID
+egquery
+summary of search results
+graph in sparse6 format
+replaces nan inf -inf
+chance level scorer
+cookie when https
+secure flag for https
+Incorrect content type handling
+missing json.loads call
+json with callback wrapper
+No parsing for text/html
+returns no style if no colors
+error message
+the global notifier to None
+using REGISTRY dictionary
+tag details to outstream
+wide apparent information criterion
+metadata for specified objects in container
+a chart document
+self
+sections
+Sets output volume using osascript
+user group
+Solaris
+all actions
+a shared : class : cupy
+When preserve is None
+binary partitions of integer n
+check sys frozen attribute
+returns DD
+extracts TLVs based on payload length and PPI type
+extracts PPI payload class using type and length
+an album info object with a track
+nested sequences or interface-implementing objects
+sequence elements recursively if class implements interface
+an auto scaling group
+a sheet with an editor
+Highlights in raw value based on unit
+missing number in sequence
+quotient and remainder efficiently
+a json issue custom attributes representation
+in a weighted graph
+distances predecessors
+saves model with unique filename
+an admin user
+current teletext program
+System Path
+sys path
+after resizing label
+the plex sensor platform
+list or single item into filter
+attributes from a path in an object
+basedir
+interior overhang angle converted to radians
+first unmodified file
+GNU Translator Files
+acknowledge message
+before and after delimiters
+Missing required features
+the gpickle file
+a test function for a method
+script file with executable permissions
+dict of workers blocking tasks
+the /it / tutorial / tutorial
+fname
+seen user table
+user name time quote chan host
+32-bit float
+downloads data for specified bundle
+when generating settings
+a gs thumbnail layer
+the biggest node in the subtree
+calls fnclex asm function
+spectral analysis modes
+locale with spaces
+Django Webob Request object
+a DjangoWebobRequest object
+fake keyconfig with bindings dictionary
+Nothing directly; deletes lock key
+HTTP status
+recording and clears recorder
+to safely remove cache
+HTML and LaTeX documentation
+wildcard certificate in ret
+multiplication tree with simplifications
+To debug chosen test interactively
+to set default dns servers
+common counts
+count in shorter block
+image properties contrast
+Suppresses warnings runs function
+nmea_Float
+string in degrees decimal minutes
+first match of directive in directives list
+scenario name
+No
+to use dnn
+No
+the user
+document by doctype name
+demo climate devices
+webengine or webkit settings
+a rule down a tree - stop on success
+unicode
+logrotate module
+a length-delimited field
+loads feature from providers
+all posts sorted by time descending
+account policy details
+sentence into words
+camelCase sentence
+socket connection loop
+to cache default role for reuse
+200 status with JSON response data
+a callback function for comment data
+nonexistent command
+No on Windows without pywin32
+via strptime or mktime
+various date formats
+to epoch time
+ts file format
+When release function is called
+releases media player object
+by provider id
+credit provider info as JSON
+from obj.all or empty list
+join left and right sequences
+CUDA memory usage or zero if not enabled
+time difference in seconds
+name
+stride to match shape size
+the stride for padding
+a new keyczar signing keyset
+testing engine
+a proxying engine with mocked connections
+a testing engine with mocked connection
+no duplicate IDs in phylip format
+sanitized filename for github
+clean filename for permalink
+Recalculates user disk usage excluding library datasets.
+in Galaxy user table
+list of random floats within range
+distribution release information key-value pairs
+service exists in keystone catalog
+resource if not dry run
+diff_replication_group
+Enhances replication group update logic.
+Enhance modifiable parameters for replication group updates.
+within radius of each point
+IPv4 address
+resolves asset path with cache busting
+sort string, allowed fields, total sorts
+Writes commented gcode file with skeinforge comments.
+sums products of x and y where n is '#'
+connects to Google DNS
+decodes RAR version field into major and minor components
+two digits version
+Stores in field variable
+Installs sudo for dnf yum or apt package managers
+None or bridge details
+performs White's Lagrange Multiplier test for heteroskedasticity
+tests for heteroscedasticity using OLS
+within last ten minutes
+a dictionary entry
+the named index template is present
+the cache of verification status model
+the specified web administration function
+response object
+after response
+sets LCD filter for library
+model instance
+methods for filtering tags
+variables against configuration
+shorter lengths from list
+Filtered or empty dictionary
+When function accepts kwargs
+Rows with any NaN values
+Y X where not NaN
+arrays without missing values
+nothing
+by checking sys.argv
+first last name
+updates user model
+hunt id if valid
+a normalized
+numpy results less than cupy
+the most recently updated status
+creates OAuth authorization URL
+until hub idle watcher triggers
+filtered list of user icons
+main navigation menu items
+formatted directory name with current time
+operational error message
+deadlock information
+builds or retrieves model instance from data
+list of files matching pattern
+last char or reversed list
+Using next method repeatedly.
+task age limit in seconds
+no data
+IPAC table with invalid toplevel metadata not written
+not in the output file
+negative indices
+For negative indices with 'wraparound False'.
+negative indices
+directory if not already folder
+Matches LAPACK type based on dtype.
+by weighted soft voting
+to build and log release
+an IKE policy
+path to create or modify directory
+parses query part into key term query class
+the app revision from environment variable
+along the last axis
+language name from babel locale
+from lang dict or language code
+cmd fmt exp as parameters
+api light panel custom
+token expiry datetime
+access token and expiry
+Not specified
+learning enabled
+object having the specified property value
+object with matching property value
+Creates item of specified type.
+string ends with n separators
+package name or main module
+sets index field options with default values
+hydrates index field with type and default value
+primitive root check
+Generates Go source from proto files.
+strings filled to specified length or less
+converts function to logical complement
+max workspace size
+precision score correctly
+internal links in soups
+Cache capacity and enables cache
+host node to hosts list
+using multitaper method
+maps color codes to RGB values in specified palette
+at the header
+in masoud mohammad
+sentence chrf score
+sentence-level chrf score
+cliques containing each node
+lowercase letters
+no clr attributes
+encoding name or returns original
+codecs lookup calls name
+canonical name
+encoding name lookup
+to filter documents within a specific timestamp range
+dictionary for query
+all completed jobs
+Chebyshev polynomial of second kind
+Adds drawing relationship if charts or images present
+to customize URL generation
+computes leapfrog steps for Hamiltonian Monte Carlo
+new positions momenta energy
+IAM users and their policies
+new annotations with modified data
+statements into valuation object
+index to SYS META TABLE if MySQL
+index creation for non-mysql databases
+MySQL missing instance_system_metadata index
+No URL requirement shown.
+binary data from file
+file data or error message
+pulls updates from repository uri
+a volume to server
+to attach volume to server
+credit requirement status if requirement exists
+last object in the shortest reference chain
+before building the site
+the ipv6 mask for a given number of bits
+creates atom feed URL
+Checks for isoinfo executable
+to verify isoinfo version or functionality
+Checks if isoinfo is available.
+isoinfo tool
+connects retrieves and writes device configurations
+redirects to secure URL
+a shortcut file
+X Org keyboard layout
+precisions and covariance type
+subcircuit with replace
+a subcircuit with another subcircuit
+a sparse CSR matrix
+builds GCE API client
+using configuration and credentials
+a temporary directory
+Compiles if exists, applies otherwise.
+a forum
+instances
+WCS comparison
+the conn object
+filesystem signatures from device
+executes gluster command
+xml result or None
+Modules starting with specified directories.
+unit extensions
+extensions for the unit
+raw ansi codes
+preferred file name encoding
+stock balance and valuation rate
+returns stock balance quantity at given warehouse
+Stock Ledger Entry for item/warehouse.
+pending jobs for a site
+when graph modifications attempted
+answers submitted to state
+to answer_log_list
+SOAP proxy for server
+Recurrence relations using rsolve
+shortest paths from source
+a null record lookup
+an environment variable
+datasource
+suffix after '@'
+processes based on pid
+service enablement
+Yes
+OverrideFieldData
+uses Override Field Data instead
+disabled overrides
+base path with sub path
+JavaScript and HTML files
+mac ports
+asserts factor exceeds shielding factor
+nothing cleans savepoints
+Not shown in snippet
+connection for cleaning
+thread ident and savepoint count
+all regions for aws glacier service
+Removes timezone info and midnight time
+T with space or removes timezone
+existing bokehjs
+shifted series with first element zeroed
+backend configuration from stanzas
+creates least squares full matrix and solves for coefficients
+No changes made to XML tree
+returns function unchanged
+NOCHANGE
+reason parameter with 'expiry'
+updates3errorpage
+a cs pointer
+on the virtual machine specified by name
+orbit transversal for permutation group
+CC I operations per instance
+Synchronizes CCI operations per instance.
+wildcard
+method from frappe or globals
+a scheduled GCS to GCS transfer job
+Define getter setter deleter
+a property descriptor for proxying attributes
+hmac - sha1 based otp
+Output joined arguments or starts loop.
+ajax import of vulnerability data part 2
+profile directory by name or raises IOError
+ip and port
+latest status for given course key
+normalized position with optional flip
+None
+None
+To simulate deepcopy without performing it
+concatenates package version with short version
+security enabled status from cluster conf
+via wagtail register method
+To specify bridges for message handling
+SSL options file to specified destination
+all names match patterns
+module for CLSID
+subscription object
+key bindings for prompt with defaults
+the roku platform
+BEM solution with potential matrix
+terminal color codes and styles
+Prints colored text to terminal if ANSI-aware.
+creates distribution instance based on requirements
+leading trailing spaces
+leading trailing multiple whitespaces
+out of the channel
+sorted dataframe with censored and uncensored observations
+an unsigned byte
+axapi uses 0/1 for enabled/disabled
+Converts enabled disabled to 1 0
+a is b
+when querying by ec2 id
+uuid from ec2 i d
+automatically
+during astropy import
+astropy logger with defaults
+ethernet link details
+decodes bytes to utf-8
+computes lomb-scargle periodogram
+periodogram density function
+line number of DOCUMENTATION assignment
+Convert iterator to iterable first
+a record constant using alloca
+LocaleRegexURLResolver for language detection
+in urlconf for language detection
+an apache site is enabled
+value from environment or jobconf map
+formatted node name
+SIGUSR1 signal
+reopens log files
+Reopens log files
+reopen log files
+Converts hex color to RGB tuple
+color from preference returns RGBA
+ranges of consecutive addresses
+valid DNA bases
+get annotation function
+brick annotation value
+approximates joint diagonalization matrix
+ajd pham function
+same keys
+ports for a specific type and protocol
+list of ports for a type and protocol
+replacement function
+Replaces URLs with static file paths
+conv2d with height = = 1
+Sets standalone attribute True.
+filesystem on device
+loads default settings from files
+cons compiles correctly
+container state running
+Checks container's running state
+formatted health report message
+toggles lamp state with optional pause
+Conflicting column order and exclusion.
+When constructor exclude conflicts with Meta sequence.
+service instance by host and topic
+full pci id
+a continuous random variable with a chi-squared distribution
+logs not followed
+a Delayed Extension with include and library directories
+unicode character input
+non-spacing mark modifying preceding character
+a formatted text label above each bar
+random seeds for numpy and tensorflow
+XML content
+port or exception
+the zigbee binary sensor
+remote login state on or off
+enabled or disabled state
+worker
+to detach a volume with a timeout
+to detach volume
+to concatenate with separator
+reads file content
+time-based nonce calculation
+nonce
+a bson decimal128
+labels and vertex indices
+the version of Java installed
+a game publisher
+Game Publisher
+game features to Jenkins builds
+Processes texts to find topic postings using sliding window.
+compares using assert_true
+files or directories
+warp coordinates for 2D or 3D shapes
+config value for app or current, key uppercased
+computes linear feedback shift register output parameters L P k : list polynomial degree shift returns rational number output
+a key and destroys it
+allows templating docstrings with function names
+Sets global hostname to new hostname
+sets protocol dialect
+metadata consensus and likelies from items list
+json data structure
+average of color components
+two color tuples
+returns average RGB values
+returns translated roles dictionary
+forces locale from request or cookies
+to show details of a specific token
+permission
+Files with review type
+resume recommendations for user
+copies specific bytes
+request body or method
+trace request without body
+data or None
+0 or -1 with error message
+directory search
+extended glob patterns
+os walk
+Security token from rallydev
+bytes representation of the message
+Categorize texts by type.
+detailed enrollment report data
+sets environment in settings
+to categorize and store least squares problems
+LSQ problems with initial guesses
+camelcase conversion for json keys works selectively
+sets global variable
+global dictionary variable name
+notification preference status
+domain name in lowercase
+all substrings in the trie
+keys matching string start
+averaging and comparing evoked data
+returns version strings joined by newline
+trace map
+from a to b over K
+custom selection indices and labels
+updates custom selection with lassoed channels
+removes leading spaces
+all strings unindented
+a continuous random variable with a laplace distribution
+product details in selected template
+product details template
+all inbound messages
+Application Call
+application call annotation
+in the base class
+skips tests if AWS environment variables not set
+when AWS STACK NAME is set
+neon application cache
+random alphanumeric string
+module name class name
+a fake implementation of pgettext
+inverse of matrix a
+not specified
+the geometry directory path
+using gcd
+pgf preamble list
+coordinate string to tuple
+when year less 1900
+handles early years Windows strftime
+replaces year with 1900 or 1901
+clocktime to milliseconds
+clause limit offset value
+redundant PUT operations
+in puts list
+Removes redundant PUTs and GETs.
+removes unused PUTs
+Use header_start and data_start parameters.
+fastbasic reader ignoring commented lines
+header_start data_start
+length value and units separately
+Retrieve video by YouTube ID
+To identify and delete missing nodes.
+cached nodes not in current list
+Creates directories ensuring no recursion or existing paths.
+Calculates JB value and p-value.
+Jarque-Bera test for normality
+a boolean indicating if user is a fan
+attaches fan status boolean
+task
+repository path
+specific deployment of a rest api
+a deployment for a given restApiId
+the english language
+protocol
+matched SQL statements
+pending deprecation as of ipython 5
+cputime samples list
+logged errors raised exception
+Displays unexecuted dependent nodes optionally.
+due to errors in their dependencies or execution
+Displays nodes not run and crash files.
+Creates store_fs linking store to fs_path
+the spolynomial of two polynomials in sdm format
+AWS SQS queue if it exists
+Writes to log and optionally console.
+compiled pattern matches target
+array with uniform distribution
+Reshapes array of random numbers to shape n
+No deletion; alters column type
+logging configuration and captures warnings
+the default version of the server
+incorrect subclass retrieval
+object
+returns attachments
+a standard icon
+returned by loader get single data
+loader has errors
+ensures even dimensions by clipping edges
+Host class
+with no other member than a fitness
+runnertype
+solc wrapper used
+compiler path
+match_template function
+No
+result
+Python list from native set items
+Async Runner
+host attributes in inventory
+a function returning a generator
+GenericBatchGenerator class
+appropriate compiler for buildout
+config manages class selection
+packet list configuration
+attributes
+condition headers
+condition
+when a user registers
+trigonometric or hyperbolic functions
+trigonometric or hyperbolic functions
+encoded key-value pairs
+Encoded table size
+sql database
+Calculates differences between desired and local datasets.
+Invalid due date extension
+retrieves nat gateways based on subnet or id
+feature-specific entity conversion
+user bootinfo from frappe
+command line
+hash from variable mapping
+Google Travel Time sensor setup
+always verifies
+no verification
+verifying certificate
+nothing
+connects socket to tunnel URL
+nothing
+song from index i to j
+songs between two indices
+for xblock resource
+in store
+via svstat
+shuffles batches then flattens
+sets file descriptor blocking
+tracks variable modifications
+storage
+nxm headers
+using relative path with Path
+/v1/repositories/<path:repository>/
+ripple width parameters
+number of taps for filter
+converts to binary string array
+convert nucleotides to codewords
+nucleotide sequence converts
+chain names with in and out labels
+column strings A to ZZZ
+a column letter into number
+Always supports 1-3 letter names
+after collection errors
+new enrollment dictionary
+principal details from kadmin
+Sums edge weights for tour steps.
+total cost of tour through graph
+pending domain join or avoid spn set
+sorted cliques exceeding threshold
+unsupported dialect
+unknown-repo
+Repository Not Found
+osm data for postgresql
+number of cached plugins
+using the trunk - show command
+the pushbullet notification service
+evaljs
+in browser tab
+evaljs
+user mappings for recent contributors
+Contributions from yesterday
+a class if present
+list of stylesheet names
+string of stylesheet links
+a superuser and runs shell commands
+by color difference
+traceback
+unique values efficiently
+hash table algorithm
+the hp ilo sensor platform
+To list all collections.
+Truncates words to stem length.
+prefix for conda environment based on arguments
+locate prefix by name
+out
+Conda ValueError if '/' in name
+the eix database - true :
+when task apply
+pressure differences and flow conservation
+pressure differences across network segments
+pressure differences and flow conservation in networks
+order with matching amount currency
+host keys from file
+not browsing
+never
+pack header version and number of objects
+non-attribute errors
+No
+ISO 3166 code for the region name
+wikimedia donation page
+a metadef object
+sinch using series or sinh/x
+capitalized words from name
+fixes bad data states
+when data is bad or inconsistent
+resource conflict
+exception string with indicators
+object id based on activity type
+state rules stats from exploration
+Renames old log if exists
+renames existing log to old
+in klass synchronized
+stats for logging with source resource
+lock successfully if key not None
+job_key
+epoch timestamp to UTC datetime
+returns object's property names
+Grains check disables states
+No checks sorted_children value
+from specified path
+To warn about experimental feature.
+Adds experimental warning message.
+discounted sum of products
+to display show ip int brief without pagination
+Using rvm install command
+paths with identical leading directory
+common leading directory
+homopolymers
+sequences with homopolymers
+TVDB instance interactively
+Concatenates module and class names.
+Relay State Helper
+to periodically check state
+Volume Group name the volume group name to remove
+IPv6 address from MAC
+Checks for bool; returns int dtypes
+IRC usernames passwords
+from complex i d
+a forgot password request
+public ip from specified location
+ISO formatted time
+the modules asynchronously or synchronously
+No
+a duplicate file extension
+through code " pt-br "
+to execute tasks
+task runner
+task runner
+to allocate swap space
+to retrieve repository tags
+the mqtt lock
+when installing on CentOS 7
+Physical volumes to volume group
+the FEATURES variable in the make
+by spaces
+a list or tuple
+2
+base to start and end of y
+Classes in modules list
+init py
+not specified
+modules to generate class definitions for
+email
+Checks uniqueness and primary status of email.
+specific data source
+headers containing sensitive information
+parsed or redacted strings
+scrollbar visible portion
+by subtracting key
+by shifting characters in reverse
+tuple of booleans
+creates thumbnail
+a general resource
+nfft and overlap values adjusted for validity
+assets to group
+asset to group
+Deflates and base64 encodes string
+days to next or previous weekday
+numpy ndarray or scalar
+obj
+API status of random org
+returns superuser
+into individual columns
+a random URL with a number
+unary functions for fields
+nothing unary functions not defined
+updates field getters
+closing ins tag
+normalizes db field across versions
+Version model's db pointers
+episode details from TVDB
+tablename and record id from viewing variable
+Handles shell command exceptions
+unit name or None
+encodes unicode to base64 bytes
+using nrows ncols parameters
+figure and subplots
+creates figure and subplots
+login or register request
+reads changes using Windows API
+help message and control socket details
+Locks file if not already locked
+on a port defined by description
+arrays from socket
+to prevent XSS in JavaScript
+node joins rabbitmq cluster
+Node joins RabbitMQ cluster.
+Yields elements in shuffled order
+data items randomly
+stream handlers
+excludes specified loggers from propagation
+stream handlers
+propagating logs to excluded loggers
+a transfer job for AWS S3 to GCS
+Exponential growth with base and factor.
+extension pattern to list
+approximates integral using trapezoids
+In-place if shuffle is True
+numpy for array and shuffling
+future date for throttling
+relative time difference in words
+the function returns user value if not default display
+Dictionary with user input or default.
+Stream type based on conditions
+rendering readout content
+obtains from Let's Encrypt
+certificate and chain paths
+Dry run skips saving certificate.
+No privkey check
+dry run skips saving
+Handles dry run differently.
+Privkey required for CSR creation
+obtains certificate saves paths
+before_all after_all
+the exploration version
+flags passed to command
+No
+'\n' '\n'
+a free cidr range or raises error
+Updates bound state log likelihood for each sample.
+a dataset with targets
+Generates dataset with specified features and targets.
+the sokal - michener dissimilarity between two boolean 1-d arrays
+in models Date Time Field
+date range or single date
+Labels via min distance, inertia as sum.
+requests tokens verifies access writes credentials
+oauth dance with prompts
+ContentDisposition object from headers
+serialized message
+an option parser for carbon management
+when sample dimensions do not match fit
+at fitting and sampling
+from Postgresql
+checks Disk Object Store inheritance
+non-local plugin decorator uses class MRO
+resources mapped to relative paths
+to find matching software entries
+target names in software keys
+Raises TypeError for non-UnicodeEncodeError
+Replace or remove non-ASCII characters.
+non-Unicode encode errors
+Replaces non-ASCII with ASCII or raises error.
+No
+No
+Handle UnicodeEncodeError or UnicodeTranslateError
+salt cloud
+Handles specific unicode errors silently.
+handles UnicodeEncodeError UnicodeTranslateError
+on freebsd systems
+ISO 8601 timestamp with microseconds
+with non-private exploration summaries
+unicode strings in compiled code
+numpy
+edge table listing sample OTU connections
+Sample OTU IDs and their abundances
+Samples connected to OTUs with nonzero abundance
+first file's data from zip
+default namespace if unset
+in info or filename
+regions
+returns list or None
+template from POST GET object current page
+posts data to url
+based on quantiles
+via systemctl or machinectl
+StimClient
+monitor data for specified instance or all instances
+database configuration
+when path is specified
+unittest suite for markdown and its extensions
+arrays recursively along specified axes
+Unicode Encode Error
+after freezing
+the local subnet name
+windows
+for script style
+data report for download
+ORA2 data for the course
+a 6-character random id
+bulk creates missing records
+No deletes; only creates.
+nothing
+bulk creates or saves instances
+MD4 hash
+all group snapshots with no filters
+path holds cluster crt and node credentials
+loads context for server direction
+credit course requirements
+maps symbols from a to b
+returns y if x equals y
+computes the analytic signal of x using the Hilbert transform
+folder info including name and description
+runs discovery caching registry entries
+sorted substates by bit count
+metadata for collection snapshots
+cron jobs YAML
+cron statements into YAML string
+from file to image filenames
+dictionary mapping filenames to bounding boxes
+a simple paginator
+Trims vowels or spaces, pads if needed.
+string representation
+branch head reference
+the swiss hydrological sensor
+random word with dictionary definition
+the " harvest "
+runs all apps without exclusions

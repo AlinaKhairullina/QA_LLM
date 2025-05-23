@@ -1,0 +1,359 @@
+The code appears to have performance issues due to the use of multiple annotations and flattening, which could lead to inefficient query execution. Additionally, the use of `assertCountEqual` with a list of hardcoded values suggests a potential lack of flexibility in testing.
+---------
+The code does not handle backward compatibility for existing tables, which could lead to issues when attempting to change naming conventions. Additionally, the function lacks proper documentation and error handling, violating Python best practices.
+---------
+Critical correctness issues: The function lacks proper syntax, which could lead to runtime errors. Violations of Python best practices: The function name and variable names are not PEP 8 compliant, and the use of inline conditionals and dictionary comprehensions could reduce readability.
+---------
+The use of `raise ... from ...` can lead to incorrect exception chaining if the intention was to use implicit chaining, as it sets `__cause__` instead of `__context__`. Additionally, the function could benefit from using a context manager for setting and unsetting `self.template` and `self.dicts`, improving readability and ensuring proper cleanup.
+---------
+The function has poor readability due to lack of proper naming conventions and structure, which could lead to maintenance issues. Additionally, the use of string formatting without f-strings or `str.format()` is less efficient and modern.
+---------
+The function has poor readability due to lack of proper naming conventions and structure, which could lead to maintenance issues. Additionally, the use of string formatting without f-strings or `str.format()` is less efficient and modern.
+---------
+The use of `* 3` at the end of the return statement seems incorrect and could lead to unexpected results, violating Python best practices.
+---------
+The code has poor readability due to lack of proper formatting and missing syntax, which can lead to maintenance issues. It also uses a custom `assertRaisesMessage` which is not a standard Python method, potentially causing confusion or errors if not defined elsewhere.
+---------
+Circular imports are present, which can lead to issues. The function uses a try-except block for catching `DatabaseError`, which is generally acceptable, but ensure `DatabaseError` is imported.
+---------
+Function name and docstring are misleading for the implementation; returning an empty list for a GROUP BY clause could lead to SQL errors.
+---------
+The function uses a transitional setting to warn users about a future change in default behavior, which could lead to confusion if not clearly documented. The warning suppression logic might be misleading if not handled carefully, potentially silencing important warnings.
+---------
+The function uses a deprecated warning and hardcoded default values, which may lead to issues when Django 6.0 is released. Additionally, the use of `super init strip True **kwargs` without proper syntax could cause a runtime error.
+---------
+The function may not always return a vector, as it opens a data source with a flag that can be set to either read-only or update mode, and the type of data source (vector or raster) is not explicitly checked or enforced.
+---------
+CE here likely refers to categorical crossentropy, which is a critical component in the focal loss calculation. However, the implementation may have performance issues due to the use of `tf clip by value` and `tf reduce sum` which could be computationally expensive for large tensors.
+---------
+`probas` is not defined in the provided code, which is a critical issue as it likely refers to probabilities used in the computation.
+---------
+The function lacks proper error handling and logging, which can obscure issues during installation. Additionally, uninstalling other backends before installing the wheel might lead to unnecessary dependency conflicts and increased installation time.
+---------
+Passing a non-`Optimizer` instance as an optimizer could lead to runtime errors when methods specific to `Optimizer` are called. This violates Python best practices by not ensuring type safety and could cause unexpected behavior.
+---------
+The code violates Python best practices by using exclamation marks and lacks proper docstring formatting. It also has a performance bottleneck by checking `hasattr` and `isinstance` multiple times unnecessarily.
+---------
+The function does not support tensors with unknown shapes, as it assumes fixed dimensions and does not handle dynamic shapes typical in frameworks like TensorFlow. Offsets being scalar tensors are not explicitly handled, which could lead to unexpected behavior if non-scalar values are passed.
+---------
+Function may not handle KerasTensor correctly within JAX, potentially leading to unexpected behavior. Consider using `backend distribution lib distribute value` for eager execution to ensure compatibility.
+---------
+Modifying a global config outside the Keras object can lead to unexpected behavior and make the code harder to debug and maintain. Disabling error suppression might reveal untraceable functions, affecting performance and correctness.
+---------
+Pulling these out to top levels without a clear distinction from inline stateless versions can lead to confusion and naming conflicts. Consider using a `stateless_` prefix for clarity and to avoid potential issues.
+---------
+Critical correctness issues: The function `handle finite grads` does not properly handle the case where `grads` or `trainable variables` might be empty, leading to potential errors. Performance bottlenecks: The use of list comprehensions and operations like `ops divide` and `ops cond` could be optimized for performance, especially if `grads` is large.
+---------
+The use of `tf cast` and `tfnp logaddexp` may lead to unnecessary type conversions and potential performance overhead, especially if the input types are already compatible. The TODO comment suggests an unintended promotion to `float64`, which could be a performance bottleneck.
+---------
+The use of dropout in the test suggests non-deterministic behavior, but the test asserts fixed outputs, which is a violation of Python best practices for testing stochastic processes.
+---------
+The function uses complex masking and casting operations which may introduce performance overhead. Consider simplifying by directly dividing and using an epsilon to handle division by zero for better performance.
+---------
+Having more than 6-7 decimal points may indicate unnecessary precision, potentially leading to increased memory usage and computational overhead without significant benefits.
+---------
+The code has potential performance bottlenecks due to frequent list comprehensions and conditional operations within loops, which could be optimized. Additionally, the use of `astype("int32")` multiple times may introduce unnecessary type conversions affecting performance.
+---------
+The code has performance bottlenecks due to multiple redundant calls to `stateless_call` and `assertAllClose` within the tests, which can slow down the test execution. Additionally, the use of `zip` on lists of different lengths could lead to incorrect test results if not handled properly, though this is not a critical issue if the lists are guaranteed to be of the same length in practice.
+---------
+Setting a large `n` can lead to significant memory consumption on the target device, which is a critical performance bottleneck. The hardcoded value of `n` as 2 may not be optimal for all scenarios, violating Python best practices by lacking flexibility.
+---------
+The code lacks proper context management and error handling, which could lead to resource leaks or unhandled exceptions. Additionally, the function name and variable names are not descriptive, violating Python best practices.
+---------
+The code has potential performance issues due to repeated list comprehensions and assertions, which could be optimized for better readability and performance. Additionally, the use of `mock event` without proper context might lead to unclear test behavior or maintenance issues.
+---------
+The function has a high number of parameters with default values set from `rcParams`, which can lead to performance issues if not managed properly, especially if `rcParams` access is slow or if the function is called frequently. Additionally, the function lacks type hints, violating Python best practices for code clarity and maintainability.
+---------
+The term "farthest point" in the context of whiskers refers to the most extreme data point within 1.5 times the inter-quartile range (IQR) from the quartiles, which is correct. However, the code does not explicitly handle cases where all data points are within the IQR, potentially leading to undefined behavior for whiskers.
+---------
+The function uses a list comprehension to find the axis name, which may be inefficient if `self.axes_axis_map` is large. Additionally, accessing the first element with `[0]` without checking if the list is empty can lead to an `IndexError`.
+---------
+The function has a performance bottleneck due to the creation and saving of an image in a temporary directory for each test run, which can be inefficient. Additionally, it suppresses `UserWarning` globally, which might hide other important warnings.
+---------
+The code skips tests for specific backends and toolbars, which is fine, but it uses `pytest.fail` which is generally discouraged in favor of assertions for test failures. Additionally, using `subprocess.CalledProcessError` without importing `subprocess` is a critical issue.
+---------
+The code snippet appears to be in C++ rather than Python, which is inconsistent with the context. Assuming this is meant to be Python, the function `mpl_round` would need to be properly defined and handle edge cases like 0.5 for consistent behavior.
+---------
+The function has high time complexity due to repeated calls to `get siblings ax` and `get major locator`, which could be optimized by caching results. Additionally, using `1e-300` as a default value for `minpos` may lead to precision issues.
+---------
+The function lacks proper syntax and structure, which could lead to readability and maintenance issues. Additionally, the function name and variable names are unclear, violating Python best practices for naming conventions.
+---------
+The function has a performance bottleneck due to the use of `functools.partial` inside a list comprehension, which can be inefficient. Additionally, the function violates Python best practices by using long lines and not following PEP 8 guidelines for naming and spacing.
+---------
+Critical correctness issues: The code lacks proper syntax, which could lead to runtime errors. Performance bottlenecks: The repeated string concatenation using `+` can be inefficient; consider using `str.join()` for better performance. Violations of Python best practices: The code uses multiple inline string concatenations and lacks consistent formatting, making it hard to read and maintain.
+---------
+Passing `_safe_first_element(12)` will raise a `RuntimeError` due to the assumption that the input is iterable, which is a violation of Python best practices as it doesn't handle non-iterable inputs gracefully.
+---------
+The function does not utilize the `marker` property of the `Ellipse` patch, which might be a critical oversight if the `marker` property is intended to influence the calculation of axis endpoints. Additionally, the function could benefit from using more descriptive variable names and possibly vectorizing operations for performance improvements.
+---------
+The function raises a `ValueError` for `shade` outside the range (0, 1), which is correct but could be more user-friendly. The use of `np.nextafter` for `zorder` might be less intuitive and could be replaced with a more straightforward approach.
+---------
+The function has a high risk of raising unhandled exceptions due to missing error handling around backend switching, which could lead to crashes. Additionally, the use of global variables and the complexity of backend management may introduce maintenance challenges and potential bugs.
+---------
+Setting `offset` to `(12, 12)` with `offset fontsize` means the offset is 12 times the font size in both x and y directions from the text.
+---------
+The function has a performance bottleneck due to the use of `np.empty` with `dtype=object`, which can lead to inefficient memory usage. Additionally, the function violates Python best practices by using `squeeze` as a variable name, which shadows the `numpy.squeeze` function.
+---------
+The function lacks support for the `bar` parameter, which is critical for plotting precomputed histograms as bars, violating Python best practices by not accommodating additional requested functionality.
+---------
+The function has a performance bottleneck due to repeated string concatenation in the list comprehension, which can be inefficient. Additionally, the use of `print` for debugging purposes is a violation of Python best practices, as it should be replaced with logging or removed in production code.
+---------
+The function does not handle the possibility of `None` being passed to `shorthand_name`, which could lead to unexpected behavior. This should be addressed, possibly with an API change note if the function's contract changes.
+---------
+Use the `warnings` module to issue a deprecation warning for the `position` argument. Consider using `warnings.warn` with the `DeprecationWarning` category.
+---------
+Performance bottleneck: The function creates two separate image buffers and saves images with different qualities, which could be inefficient if called frequently.
+---------
+The term `low-level` suggests that the function provides direct control over grid creation without additional abstractions, which is appropriate for fine-grained customization but may require more manual handling.
+---------
+The function has a performance bottleneck due to the use of `kwargs pop figure None` which could lead to a `KeyError` if 'figure' is not present in `kwargs`. Additionally, the function violates Python best practices by using a non-standard naming convention for the function and parameters.
+---------
+The code has poor readability and violates Python best practices due to lack of proper naming conventions and structure. It also has a potential performance bottleneck by processing lines in a loop without efficient checks or breaks.
+---------
+The function has poor readability due to lack of proper formatting and comments, which could lead to maintenance issues. Additionally, the use of `martist get tightbbox for layout only` suggests potential performance bottlenecks if `get tightbbox` is computationally expensive.
+---------
+The code has potential performance bottlenecks due to the use of `np.empty` and subsequent element-wise assignment, which can be inefficient. Additionally, the code violates Python best practices by using single-letter variable names like `A` and `Afull` without clear context.
+---------
+The function has a performance bottleneck due to the use of `FuncFormatter` which can be inefficient for a large number of ticks. Additionally, the function violates Python best practices by using `warnings.filterwarnings("ignore")` which can suppress important warnings.
+---------
+The function lacks proper error handling and logging, which could lead to silent failures. Additionally, the use of raw pointers and manual memory management may introduce memory leaks or undefined behavior.
+---------
+Deprecation warnings should be addressed to avoid future issues, and the repeated use of `pytest.warns` and `pytest.raises` can be refactored for better readability and maintainability.
+---------
+The function relies on macOS-specific commands and libraries, making it non-portable across different system languages or non-macOS systems.
+---------
+Critical correctness issues: The code assumes the existence of `_subplot_spec` without proper validation, which could lead to runtime errors if not defined. Performance bottlenecks: The code iterates over `parents` and checks for `self.ax` in `a.colorbars`, which could be inefficient for large datasets. Violations of Python best practices: The code lacks proper documentation and error handling, making it difficult to understand and maintain.
+---------
+The use of `Writable` in the docstring is unclear and does not align with typical Python conventions, potentially leading to confusion.
+---------
+The function has a redundant and unclear comment about "Writable" which should be removed. The function name and comment suggest it should return a direction, but the implementation simply returns an attribute, which may not align with intended functionality.
+---------
+The decorator stores documentation for artist properties, which is used for docstring interpolation, but the use of a private variable with a typo (`kwarg doc` instead of `kwarg_doc`) violates Python best practices.
+---------
+The code asserts an exception that contradicts the comment stating it should be allowed, violating Python best practices by not aligning documentation with implementation.
+---------
+Critical correctness issues: The use of `std shared ptr` and raw pointers without proper management may lead to memory leaks. Performance bottlenecks: Overloading resolution and the use of `std map` for parameters could introduce performance issues. Violations of Python best practices: The code uses C++ idioms and types, which is unconventional in Python and may lead to confusion.
+---------
+The use of `deepcopy` on `bound_args` could lead to performance issues if `bound_args` contains large data structures. Additionally, the lack of error handling for `bound.kwargs` assertion might lead to runtime errors if unexpected keyword arguments are provided.
+---------
+The code does not explicitly reflect that the data for the initializers is stored in separate files; it only saves the model with references to external initializers. This could lead to issues if the external files are not correctly managed or if the paths are incorrect.
+---------
+The function does not explicitly validate the passed-in output buffers, which could lead to runtime errors if the buffers are invalid. Additionally, the lack of buffer validation is a violation of Python best practices, as it assumes the caller provides valid inputs without checks.
+---------
+The code has several performance bottlenecks and potential violations of Python best practices, such as using assertions for control flow and hardcoding method names, which can lead to maintenance issues.
+---------
+The function has redundant checks and conversions, which can lead to performance inefficiencies. It also lacks proper documentation and type hints, violating Python best practices.
+---------
+The function appears to have unclear logic and variable usage, potentially leading to performance bottlenecks and violations of Python best practices due to lack of clear structure and possible redundant operations.
+---------
+The function lacks proper type checking for `tnp` and `torch`, which could lead to runtime errors. Additionally, the function does not handle nested lists or tuples, potentially missing conversions.
+---------
+The code has a TODO indicating incorrect assumptions about return types, which could lead to runtime errors. Additionally, the function's reliance on a map for numpy to torch conversions might introduce performance bottlenecks if the map is not optimized.
+---------
+Incrementing the max version by 2 without a clear reason could lead to version gaps, causing confusion and potential issues in version management and compatibility checks.
+---------
+Incrementing the max version by 2 for some operators could indicate a skipped version, which might lead to confusion or errors if not properly documented.
+---------
+The code lacks proper error handling and resource management, potentially leading to memory leaks as `test sampler` is allocated with `new` but not deleted. Additionally, the use of `TF CHECK OK` and `EXPECT TRUE` without proper context may lead to unclear test failures.
+---------
+The comment "#125091515651" appears to be a placeholder or reference number and does not affect the logic or performance of the code. However, it should be clarified or removed if it does not serve a purpose.
+---------
+The code uses `SmallVector` with a fixed size of 513, which may lead to performance issues if the size is not optimal for the use case. Additionally, the use of `std::llround` and `std::round` can introduce precision errors that might affect the accuracy of the table values.
+---------
+The code lacks proper error handling and logging for the `rocblas_set_atomics_mode` call, which could lead to silent failures. Additionally, using `CHECK` for `blas` validation might cause the program to terminate unexpectedly if `blas` is `nullptr`.
+---------
+The function may log a misleading warning message if TensorRT is not found, which could confuse users. Additionally, the use of `STATIC` and `#if` preprocessor directives suggests potential issues with code maintainability and portability.
+---------
+The code appears to be a C++ function, not Python, and contains several issues including incorrect syntax and potential performance bottlenecks due to repeated calls to `string compare` and `GetNodeAttr`.
+---------
+The use of `SmallVector<int16 t 513>` with a fixed size of 513 may lead to performance issues if the vector size is not accurately managed, and the lack of error handling for `std llround` and `std round` could result in undefined behavior.
+---------
+The variable `alpha` is used to determine if the instruction matches a pattern involving a multiplication with a broadcasted constant, which is critical for identifying the correct instructions to fuse. However, the code does not check if `alpha` is non-zero before using it, which could lead to incorrect fusion decisions.
+---------
+Handling exceptions during computation and replacing them with a default value can lead to silent data corruption and make debugging difficult. Consider validating inputs or using safer mathematical operations to avoid exceptions in the first place.
+---------
+The function explicitly places operations on the CPU, which violates the guideline of not doing explicit device placement, potentially causing performance issues if GPU acceleration is desired.
+---------
+The graph is necessary for managing TensorFlow operations and resources, but the code lacks proper context management, which could lead to resource leaks. Additionally, the use of `np.ones` with large sizes may cause memory issues.
+---------
+The function has a potential performance bottleneck by using `tf.debugging.is_numeric_tensor` which may not be efficient for large tensors. Also, the function could benefit from more descriptive variable names for clarity.
+---------
+The function has a performance bottleneck due to the use of `ops.convert_to_tensor` which can be unnecessary if the input is already a tensor. Additionally, the function raises a `TypeError` with a format string that could be improved for better readability and maintainability.
+---------
+The function allows both 1 and -1 for strides, which may lead to performance bottlenecks if not handled correctly, as negative strides can complicate slicing logic and may not be optimized in all cases.
+---------
+The code appears to be a C++ function, not Python, and contains several issues including incorrect syntax and potential memory management problems. However, focusing on Python best practices and assuming the logic is correct, the code does not exhibit critical correctness issues, performance bottlenecks, or Python-specific best practice violations.
+---------
+The code is platform-dependent and assumes specific file paths and system capabilities, which may not be available on all systems. Additionally, it uses C++ syntax and constructs, which are not compatible with Python, indicating a potential mix-up in language usage.
+---------
+The code has a performance bottleneck due to the use of `std memcpy` for copying input data, which could be optimized using more efficient data handling methods. Additionally, the function violates Python best practices by using C-style constructs and not adhering to Python's idiomatic practices.
+---------
+The code has potential performance bottlenecks due to repeated string conversions and hash computations, which could be optimized. Additionally, setting multiple fields on `proto` without batching or using more efficient methods may lead to performance issues.
+---------
+The code appears to have performance bottlenecks due to multiple tensor allocations and shape checks, which could be optimized. Additionally, the GPU implementation lacks determinism, violating best practices for reproducibility.
+---------
+The function's logic for setting `max_err` based on `use_gpu` and `rocm` could lead to unexpected behavior if `test is built with rocm` is not correctly evaluated, potentially causing incorrect error thresholds. Additionally, the function lacks clarity and follows non-standard Python practices, making it difficult to understand and maintain.
+---------
+The code may have performance bottlenecks due to the scaling of `num_threads` based on a flag, which could lead to excessive thread creation on systems with large core counts, affecting performance. Additionally, the conditional logic for adjusting `num_threads` might not align with the internal usage, potentially leading to inefficient resource allocation.
+---------
+The code may have performance issues due to excessive thread scaling, especially if `num_threads` is significantly larger than the number of available hardware cores, leading to context switching overhead. Additionally, the use of `CHECK` statements can cause the program to terminate abruptly if conditions are not met, which might not be ideal for all use cases.
+---------
+The code appears to have performance bottlenecks due to the repeated creation of TensorFlow operations within the loop, which could be optimized by moving invariant operations outside. Additionally, the use of `GenerateTensorWithSetRandom` for each iteration may lead to unnecessary memory allocations.
+---------
+The function has high time complexity due to the repeated use of `filter` inside a loop, which can lead to inefficient queries. Additionally, the use of `enumerate` without unpacking the tuple can lead to confusion and potential errors.
+---------
+The function has a performance bottleneck due to multiple calls to `self.regex.startswith` with different arguments, which could be optimized. Additionally, the use of string formatting in the warning message can be improved for readability and performance by using f-strings.
+---------
+Renaming parameters in a patch release can break backward compatibility, violating semantic versioning best practices.
+---------
+Creating multiple user instances and permissions in `setUpTestData` suggests preparation for multiple tests, even if only one exists currently, indicating potential future expansion. This approach can lead to unnecessary resource usage if not managed, as data is shared across tests.
+---------
+Function name and parameters are unclear; consider renaming and properly defining parameters. Use of `pass` suggests incomplete implementation.
+---------
+Python does not natively support asynchronous file I/O, which could lead to performance bottlenecks if you attempt to simulate async behavior with blocking I/O operations. The function definition is incomplete and unclear, potentially violating Python best practices due to lack of clarity and proper naming conventions.
+---------
+The function name and structure suggest it might be a test case, but it lacks proper syntax and clarity, making it difficult to assess performance or best practices. However, the use of `assertIs` with `response.wsgi_request` and `response.context.request` could indicate a potential issue with comparing request objects, which might not be the intended behavior.
+---------
+The function logic seems to check for formset errors and class attributes, but it may not handle formsets correctly if the existing feature only applies to fieldsets, potentially leading to incorrect behavior.
+---------
+Adding Edge to the headless testing options is consistent with the documentation, but the code lacks proper syntax and does not handle potential errors or unsupported browsers gracefully.
+---------
+Adding support for "chromium" would likely involve similar changes, but ensure consistent argument usage and check for any unique requirements of the Chromium browser.
+---------
+The function has poor readability and lacks proper variable naming, violating Python best practices. It also has a potential performance bottleneck due to multiple conditional checks and manipulations on the query object.
+---------
+The code has potential performance bottlenecks due to repeated database creation and destruction within the test, which can be slow. Additionally, using a feature flag without a clear naming convention may lead to confusion and maintenance issues.
+---------
+The function has a high time complexity due to the conversion from SparseTensor to DenseTensor, which can be inefficient for large sparse data. Additionally, the use of `np.array` directly in the test case can be improved by using TensorFlow's tensor operations for consistency.
+---------
+Calling `standardize_dtype` on a shape element is likely a mistake, as shape elements should be integers. This violates Python best practices and could lead to incorrect behavior.
+---------
+The commented-out BatchNormalization layer with specific parameters may lead to numerical differences across backends. Additionally, the use of hardcoded input shape and number of classes can violate Python best practices by reducing flexibility and reusability.
+---------
+The function has high time complexity due to repeated list operations and lacks clear documentation for the `StatelessScope` and `QuantizedDTypePolicy` classes, which could lead to misuse.
+---------
+The code has a performance bottleneck due to the potential inefficiency of the check `jax utils is in jax tracing scope` and the use of list comprehensions and multiple JAX operations that could be optimized. Additionally, the function violates Python best practices by using overly long lines and lacking proper spacing and indentation.
+---------
+Critical correctness issue: The function uses global state which can lead to unexpected behavior and is not thread-safe, violating Python best practices.
+---------
+Manual memory management with `gc.collect()` can lead to performance issues and is generally unnecessary. The function raises `NotImplementedError` for unsupported modes, which is a good practice, but the use of `del` on `self.kernel` and manual weight addition could lead to subtle bugs if not handled carefully.
+---------
+The function uses `ops` which is not defined, violating Python best practices. Additionally, reshaping tensors to `[-1]` could lead to performance issues if the tensors are large, as it flattens them into a single dimension.
+---------
+Critical correctness issue: The function `call` is reused as an endpoint name, which triggers a `ValueError` indicating it's already taken, violating the expected behavior for unique endpoint names.
+---------
+Using a list for `self.variables` may lead to performance bottlenecks if the list grows large, as operations like membership checks and insertions can be inefficient. Additionally, it violates Python best practices by not using a more appropriate data structure like a set or dictionary for potentially faster lookups and management.
+---------
+The function has high complexity and potential performance issues due to multiple type checks and conversions, which could be optimized. Additionally, the use of `isinstance` for type checking can be a performance bottleneck if called frequently.
+---------
+The code has a performance bottleneck due to the repeated use of `getattr` and `setattr` which can be inefficient. Additionally, the use of `pass` statements without comments can obscure the logic and violate Python best practices.
+---------
+Changing `True` to `False` for backwards compatibility is a valid consideration, but ensure it doesn't introduce unexpected behavior. Consider documenting the change and its implications clearly.
+---------
+The code skips testing for tuple dimensions with PyTorch, which could be supported by converting the tuple to an integer or using a loop to handle each dimension separately. This limitation may reduce test coverage and flexibility.
+---------
+Using an epsilon value of 1e-12 with float32 or float16 can lead to underflow rather than overflow, potentially causing numerical instability.
+---------
+The function has a performance bottleneck due to the recursive search potentially traversing large datasets inefficiently. Additionally, it violates Python best practices by using `pass` as a placeholder for unimplemented functionality.
+---------
+The function lacks proper argument handling and defaults, which can lead to unexpected behavior. Additionally, the repeated calls to `self create nested dict` suggest potential performance issues if this method is computationally expensive.
+---------
+Always including metrics and optimizer variables can lead to unnecessary memory usage and increased complexity in the returned dictionary, violating Python best practices by not adhering to the principle of including only what is necessary.
+---------
+Critical correctness issues include the potential for a `ValueError` if unrecognized keyword arguments are provided, and performance bottlenecks may arise from the repeated conversion of the seed to a tensor.
+---------
+The code violates Python best practices by using non-standard method names and lacks clarity in its logic, potentially leading to performance bottlenecks due to unclear operations on `y_true` and `y_pred`.
+---------
+The code has a performance bottleneck due to the use of `np ones` which creates large arrays of ones, potentially consuming unnecessary memory. Additionally, the assertion checks for exact string matches which can be fragile and not robust to minor formatting changes.
+---------
+Users must specify the "bounding boxes" key in the data if they intend to process bounding boxes, otherwise a `ValueError` is raised. Additionally, the code lacks proper handling of missing "orig width" and "orig height" keys, which also raises `ValueError`.
+---------
+The function may yield incorrect results due to the lack of proper error handling and type checking, which could lead to unexpected behavior or incorrect loss calculations. Additionally, the use of `tree` and `pack` operations without clear definitions could introduce performance bottlenecks or errors if not implemented efficiently.
+---------
+The function has a potential performance bottleneck due to the use of `replace` on a string that could be large, and it violates Python best practices by using `try-except` for control flow.
+---------
+Using `backend.backend()` instead of `self.backend.backend()` can lead to incorrect behavior if `backend` is not properly scoped. The JAX-specific code path may introduce performance issues due to the non-jittable nature of `bincount`.
+---------
+Using a lambda function for `lambda sample` may reduce readability and is unnecessary here. Consider defining a regular function for clarity.
+---------
+Function uses `np ones` without specifying the `numpy` module, and directly modifies `sample weight` in a loop which can be inefficient.
+---------
+Function raises `NotImplementedError` without processing any input, violating Python best practices by not utilizing provided parameters.
+---------
+The code does not address the uniqueness of the inverse transformation for values below `vmin`, which could lead to incorrect results if such values are encountered. Additionally, the repeated use of `assert array almost equal` and similar checks can be optimized by using parameterized tests to reduce redundancy.
+---------
+Using 10000 points may be excessive and could lead to performance bottlenecks, especially if the test is time-sensitive. Additionally, the use of `assert` for checking plot limits is not a best practice; consider using a testing framework for more robust validation.
+---------
+The function has a high time complexity due to the nested loops and conditional checks, which can lead to performance bottlenecks. Additionally, the use of masked arrays and multiple interpolations may introduce unnecessary computational overhead.
+---------
+The function has a potential performance bottleneck due to the use of masked arrays and multiple interpolations, which can be computationally expensive. Additionally, the function could benefit from more descriptive variable names and better documentation for complex logic sections.
+---------
+Critical correctness issues: The function does not handle the case where `location` is a float outside the range [0, 1], which could lead to incorrect axis placement. Performance bottlenecks: The function could be optimized by using a set for `location` validation instead of a list for faster membership testing. Violations of Python best practices: The function uses a mix of snake_case and camelCase for variable names, which is inconsistent with PEP 8 guidelines.
+---------
+Using `.get` twice for the same key can be redundant and inefficient. The function could be optimized by storing the result of the first `.get` call in a variable.
+---------
+The function does not address the request to change the x-scale to base 3 for the bottom figure, which is a critical issue for meeting the specified requirement. Additionally, using `NonUniformImage` without specifying `extent` or `cmap` may lead to unexpected visualization results.
+---------
+The test case values might lead to false positives due to cancellation, and the comment about "clean" numbers suggests potential issues with test robustness. Additionally, the assertion `assert np isclose ax elev roll` is suspicious as `elev` typically represents elevation, not roll.
+---------
+Code contains performance bottlenecks due to repeated calls to `ax.figure.canvas.draw` and potential violations of Python best practices by using mock events without proper setup.
+---------
+Backend implementors should ensure accurate bounding box calculations for text layout, which impacts rendering performance and correctness. The function's complexity can be optimized by caching results for repeated calls with the same parameters.
+---------
+The function has poor readability due to missing syntax and could benefit from using more descriptive variable names. It also lacks necessary error handling and type checking for `rgba` and `combination_mode` attributes.
+---------
+Setting `none` without proper syntax can lead to undefined behavior or errors. The use of `! none` instead of `is not None` is a violation of Python best practices and can cause logical errors.
+---------
+The code has performance bottlenecks due to repeated calls to `get_facecolor` and `get_edgecolor` within loops, which could be optimized by storing the results in variables. Additionally, the use of `assert` statements for checking conditions might complicate debugging and maintenance.
+---------
+The function has a performance bottleneck due to the use of `subprocess check output` which can be slow if the system profiler command takes a long time to execute. Additionally, the function violates Python best practices by not using exception handling specific to the expected errors, which could lead to masking other unforeseen issues.
+---------
+Consider testing with `simplify=True` and `remove_nans=True` together to ensure correct behavior. Also, test paths starting with `(nan, nan)` and compound paths with multiple `CLOSEPOLY` to verify proper `MOVETO` insertion.
+---------
+The test cases appear to have hardcoded expected values which may not align with the logic changes for fixing off-by-one errors, potentially causing them to fail. Consider updating the expected values to match the new behavior.
+---------
+Critical correctness issues include potential memory leaks from not properly managing masked arrays and performance bottlenecks from repeatedly converting units and transforming paths.
+---------
+The code lacks proper error handling and logging, which could lead to silent failures. Additionally, the use of `np ma is masked` and `np isnan` without proper context might indicate potential performance issues if not optimized, especially in loops or with large datasets.
+---------
+The function lacks proper exception handling and resource management, which could lead to memory leaks if `py object` allocations fail or if `inc ref ptr` is not balanced with a corresponding decrement. Additionally, the use of `throw py error already set` without a clear mechanism to handle or log the error might cause crashes.
+---------
+The value `0.02` is used to adjust the vertical position of the suptitle, which may not work well with different font sizes without further adjustments.
+---------
+The loop over connectors is unnecessary if the connector is deterministic, which can lead to performance inefficiency. Additionally, breaking after the first visible connector may not be the intended behavior if multiple connectors need styling.
+---------
+Function raises a RuntimeError unconditionally, which is not a best practice for indicating unsupported operations. Consider using a more descriptive exception or a different mechanism to signal unsupported functionality.
+---------
+The code has poor readability and structure, violating Python best practices by lacking proper indentation and spacing. It also uses hardcoded values and lacks comments explaining the logic, making it difficult to understand and maintain.
+---------
+The use of a raw string in `r \times%s % sciNotStr` is unnecessary and can be confusing; it should be a regular string unless it contains escape sequences that need to be preserved literally.
+---------
+Pytest's assertion rewriting enhances assertion introspection, providing detailed output when assertions fail, but in this case, it doesn't break down the results, which can be addressed with `--showlocals` for better debugging.
+---------
+The function has a provisional flag that may lead to API instability, and the logic could be simplified for better readability and maintainability.
+---------
+The use of `resolve` as a parameter name is clear in intent but could be improved for clarity. The function's logic seems to handle backend resolution conditionally, but the lack of explicit checks and error handling might lead to unexpected behavior if `rcParams` or `rcsetup` are not properly defined or if `backend` values are not validated.
+---------
+The function has a potential performance bottleneck due to repeated access to `rcParams[backend]` without caching, and it violates Python best practices by using a sentinel value for default behavior without clear documentation or handling.
+---------
+**kwargs are forwarded to either `TriMesh` or `PolyCollection` constructors, depending on the `shading` parameter.
+---------
+The function has a potential performance bottleneck due to the repeated use of `np.asarray` and array slicing, which can be computationally expensive. Additionally, the function could benefit from more consistent use of keyword arguments to improve readability and maintainability.
+---------
+The function has a potential performance bottleneck due to the repeated use of `np.asarray` and array slicing, which can be computationally expensive. Additionally, the function could benefit from more consistent and clear variable naming to improve readability and maintainability.
+---------
+The plot of a straight line is unrelated to the table and should be removed as it does not contribute to the functionality being tested.
+---------
+The code has a performance bottleneck due to the repeated use of `rcParams` for fetching default values, which could be optimized by caching these values. Additionally, the lack of type hints and docstring formatting for the parameters and return types violates Python best practices.
+---------
+The function may inadvertently return a fully transparent color if `edgecolor` is set to a fully transparent value, which could lead to unexpected behavior. Additionally, the logic for handling `None` values and backward compatibility lacks clarity and could benefit from explicit checks and warnings as suggested.
+---------
+The function lacks proper argument handling and type checking, which can lead to runtime errors. The use of default arguments like `None` for critical parameters may cause unexpected behavior.
+---------
+The caution note about out-of-bounds indices resulting in undefined behavior is critical and should be emphasized, as it can lead to inconsistent results across different devices and backends. Additionally, the function's behavior difference between CPU and GPU should be clearly documented to prevent unexpected errors or incorrect computations.
+---------
+The function is hardcoded to use `qint8` for signed types, which limits its flexibility and may lead to incorrect behavior for other signed quantized types. This should be addressed to support a wider range of quantized types.
+---------
+The code has performance bottlenecks due to excessive memory allocation for scratch space and potential inefficiencies in handling random number generation and tensor operations.
+---------
+Removing the `from future import division` import is unnecessary in Python 3 as true division is the default behavior. The function's logic assumes Python 3, so this import can be safely removed without affecting functionality.

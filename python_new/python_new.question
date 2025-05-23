@@ -1,0 +1,180 @@
+Do we know if Oracle is affected as well? 
+This change is backward compatible I'm afraid, what about tables were created before we attempt to change the naming conventions?
+`test_union_multiple_models_with_values_list_and_annotations` still works when reverting other changes    It does? 🤔  
+@adamchainz You're probably more familiar with chaining than me but isn't the implicit version slightly different? 🤔  At least that's how I'm reading it in the docs:    https://docs.python.org/3/tutorial/errors.html#exception-chaining    More specifically: https://docs.python.org/3/reference/simple_stmts.html#raise    Using `from` attaches the parent to the `__cause__` as opposed to the `__context__` with the implicit variety 🤔  
+This change is due to the fact that we're currently activating a fallback language not `settings.LANGUAGE_CODE`:    https://github.com/django/django/blob/5b8a043bf51ab8bcf4a758d0b4646f30a84be183/django/middleware/locale.py#L40-L41    @claudep What do you think?
+What is your question exactly?
+👍 This looks correct though am wondering why it was only failing with Value() 🤔
+I couldn't get this working for some reason with 3.12.0a7 but I wanted to see whether this message was in this PEP-678 "note" 🤔    Did you see any "notes"?
+iirc it was to deal with problematic backends like Oracle
+where's kezabelle when you need a linguistic expert lol
+I don’t understand what you’re proposing. An HTTP setting that defaults to True, but if set to False opts in to the future? Why would that mean no warning when opting in?
+Make sense? (It might not: I've been at the computer all day, so may well be hallucinating by this point 😜)
+Is this always a vector? 
+What is CE here?
+What is `probas`?
+Do we actually needed those? One we have the wheel we should be able to just install the wheel + pytest.
+Is it every possible to pass an optimizer that isn't an `Optimizer` instance? Wouldn't that blow up?
+Legacy optimizers simply don't exist in Keras 3, do they?
+Does it support tensors with unknown shapes (e.g. with TF)? Can the offsets be scalar tensors?
+It should work in both situations in JAX, right?
+The fact that instantiating a Keras object modifies a global config outside Keras might be problematic. What happens if we don't do it? What tests break?
+Why are we pulling these out to toplevels? It is slightly confusing because we also have stateless versions for jax with the same name declared inline.    Probably we should either keep them all inlined, or pull them all out, with a `stateless_` prefix for the stateless ones?
+don't see the update yet, did you forget to push?
+Is it intentional? `log` operations in some cases provide more accurate results with double precision. I am not sure though if it's the same reason here
+I'm confused -- if there's dropout the test should be non deterministic, no? So the output should change from one execution to another?
+I am not convinced that this is the best solution performance wise (it could be fine, not sure). Would it be better to just divide in float and use an epsilon fuzz factor to avoid division by zero? 
+Any specific reason for having more than 6-7 decimal points?
+Just curious, does the existing jax optimizer support ema? or its from the base_optimizer?
+So previously the test worked because the zip was zipping lists of different lengths?
+This sounds like a more user-friendly strategy.    I have some questions about it:  1. Is it acceptable to introduce some level of overhead/complexity to fine-tune `n`?  2. `n` is only configurable at each epoch, and the statistics of one-epoch time might vary with different metrics and callbacks, etc. Is it fine to use one-epoch time to optimize `n`?  3. There is a drawback to setting a large `n`: it will consume a lot of memory on the target device.    References:  - ResNet50 example from Flax uses `2`: https://github.com/google/flax/blob/85dfad242e56098849dbf05e7e4657b3a40820f9/examples/imagenet/train.py#L214  - `torchtnt.utils.data.CudaDataPrefetcher` defaults to `2`: https://pytorch.org/tnt/stable/utils/generated/torchtnt.utils.data.CudaDataPrefetcher.html
+This worked before didn't it?  It was when the rcParam was set that the problem was?  Or was the layout still getting set to None, and then falling back to the rcParam?      Otherwise if this works, I'm all for it!  I do wish all the context switching were simpler to debug, but...
+This might fix the coverage issue?
+And actually I'm confused - is the ASCII art also incorrect?  
+also, is it the farthest data point and hence why you said "farthest point"? 
+ping @oscargus here?
+Again, not a problem if thats how the rest of the tests are in this file - definitely an idiosyncratic structure!  OTOH, are we sure we don't want this in `test_backend_tools.py`?  
+Just to check, this changes an E result to a F result?
+Is there a reason `mpl_round` doesn't work here?  Does `mpl_round` handle 0.5 differently?  
+This is now fixed. I wonder if one should do something similar for the other locators?
+It only gets triggered when dragging a legend, afaik mpl isn't testing any interactivity, is it?
+Why would we?
+Not sure what this line is for?
+Thats true... OTOH, if we pass `_safe_first_element(12)` do we want it to error?    
+I will add sich methods here https://github.com/matplotlib/matplotlib/blob/main/lib/matplotlib/patches.py#L1506-L1655  Do you also see a marker property of Ellipse Patches? 
+Is everybody fine with the shading in RGB space or do we need to look into saturation?
+Clearly I'm no authority on this, but warning and re-raising seem pretty logical to do because it just crashes otherwise.      I also didn't fully understand your comment -- like why should there be no GUI at all with block=True/sleep enabled. The couple of examples I tried all seemed to work (switching to a different backend and continuing as intended). I'm very likely missing something, but is the expected behavior here something different? 
+What I mean is what does relative to font size mean - like if I set offset to (12,12) in font size, what does that mean for how far the offset is from the text?.
+What is this?
+Can you also add bar since we also recommend bar Y the top for plotting precomputed histograms?
+I take it that there will be another update to this and @ksunden was only sorting out the parsing?   But this line should go.
+Are we sure that None will never be passed here? What about third-party libraries etc? It may require an API change note if nothing else.
+What's the best way to issue that deprecation warning? I'm having trouble finding an example where we do that for a possible value of an argument.
+It looks like Pillow has 3.12 wheels now; maybe we don't need to skip this?
+what information is `low-level` supposed to impart here?
+Is there a way to say that explicitly? 
+Can you explain this song and dance? 
+Sure, but they are in a private module and I have another PR stalled for adding the fully qualified paths, so I selected to take, what appeared to be, the easy way.  (Is this PR an improvement compared to the previous?)
+Were these changes intentional?
+Looks like only one entry was changed?
+Do we wish this single instance to warn if this returns `0`?    Or are the desired warnings from this handled by the other parts of this PR?    (All other instances had `warn=false` passed, but this one would have warned)
+At this point, shouldn't the deprecation warnings be eliminated?
+Is this output portable across different system languages?
+Can you walk through how this works?  Where did `_subplot_spec` come from and why is it defined on the parent gridspec?  
+What are you trying to communicate w/ writable? 
+@judfs can you remove the writable? I don't think it's conveying what you intend to here and I don't want to hold up your PR longer 
+Having a little bit of trouble following this - is there a more direct way of saying what this decorator does?   My reading is that the decorator stores documentation for the Artist property and the documentation stored on the decorator is what populates interpolated fields for that Artist?  
+Is this comment from an earlier revision?  It says we allow, but then the code asserts an exception.
+1. Should this change be applied on main branch?  2. why `= true`?
+out of scope for this PR, but I'd love to hear your opinion on this. Which would you prefer?    * optional, default to some default (same behavior as current exporter)  * optional, default to latest  * required  * specified via a separate 'config.py' file (what dynamo and inductor does)  * not configurable
+Trying to understand, does it mean the data for the initializers is now stored in separate files? Does the call    ```  onnx.save(onnx_model_with_initializers, os.path.join(basepath, model_location))  ```    reflect that?
+How do we guarantee the passed-in output buffers are valid? So basically what is our protocol with the runtime?
+Is this just a refactor?
+Why does this util exist then? Can we collapse them?
+does this... do anything lol
+Let me double check, I am pretty certain we do hit this, and that is why I added it. Why would you expect us to not get here? 
+What is the difference before and after? Or is this just refactoring.
+Why increment max version by 2?
+Why increment max version by 2?
+Ok I suppose we don't have this coverage in the OSS CI?
+what does "#125091515651" mean here?
+Why was this change needed?
+ROCM 5.0 should be OK. However, I didn't pay attention to the fact that the error message looked more like a linker error, not a compiler error. I also didn't notice that the other API calls for rocblas go through a wrapper, most likely with the intent to support loading the rocblas library dynamically at runtime. Therefore, I have updated the call to `rocblas_set_atomics_mode` to also use this wrapper, hopefully that will resolve the problem. Could you please rerun the CI?
+Maybe users just installed it to the wrong path. How about "Could not find TensorRT." ?    @reedwm What do you think?
+Fixed. Can you please let us know the reason behind this suggestion?
+Without this change there's a crash generating the lookup table while creating the `UniformQuantizedType`. Honestly, I didn't investigate too much because this change seems to simplify the code and fix the issue. Happy to take another look if you feel it would be worth investigating?
+How is alpha used?
+Could this be avoided? E.g., could we detect rather than recover from?
+Don't do explicit device placement.  Why doesn't this work on GPU?
+Why do we need the graph?
+I just implemented these changes. Does it look fine now? Also, is there any specific ordering to functions in dtypes.cc or types.h to keep it consistent with other files? For the time being, I placed the code for is_numeric and IsNumericDataType right above the code for is_complex and IsComplexDataType.
+Hi. I'm still waiting on Py+CPP Test Suite - Ubuntu CPU, Python 3.9 and Code Check - Changed Files workflows to be run and approved. It seems odd that it's taking this long. Any ideas why?
+This is 1 and -1 right, why are both allowed here?
+What clang error did we get without the extra pair of parentheses? Could you please post the error message? Thank you!
+Is this always going to work?  This seems like it would be very platform-dependent.
+Could you explain why this change is needed?
+This looks like a bug fix that can land in a separate PR, together with a regression test?
+What changed in this block?
+Why is the max error larger when you have more information for computing it?  What if use_gpu is `False` - then I'd expect the error to not change.  And have you tested with rocm to know there is a difference?  
+Can you use something in [`tsl/platform/cpu_info.h`](https://github.com/google/tsl/blob/0edca33c9c206492b77caf2a253072c307649624/tsl/platform/cpu_info.h#L61)?  Internally we don't actually use `std::thread` or `hardware_concurrency`.    Do you know what the cause is, and why it mainly affects large core counts?  I would expect it to have less of an impact in those cases.  
+If you're mainly talking about overall core counts, then it would affect systems with num_threads < 16 as well.  So where does the large number of cores come into play?
+Are you sure it's only enabled with MKL?  I believe I added this for CPU in commit 8cb3e0a4901bb7d5f62acc033220408ade3dc4e8.
+@charettes Do you have suggestions on how to detect whether a full subquery is necessary? I imagine we'll need to look through the expressions in the `WhereNode` and see if there are any that are not a field on the model, but I'm not sure how to do that.
+How did you access the asv profile btw? Is that from running it locally?
+Are we OK with renaming them in a patch release, though?  
+What's the goal of creating these instances in `setUpTestData` if there is a single test? Do you expect more tests to be added?
+@bigfootjon What do you think? :point_up: 
+Is there an async API for files? My understanding is that Python does not expose an async file io model. IIRC somewhere in Django (ASGI support for static files?) that has a context switch due to this same limitation.
+As this case is covered by the default Django settings (i.e. `ADMINS` is an empty list and `AdminEmailHandler` is in the default logging), I think it might be worth adding a release note.  I can be persuaded out of it (I see @felixxm approved earlier - maybe you have thoughts?).
+Is this and the changes to `django/contrib/admin/templates/admin/edit_inline/tabular.html` and `django/contrib/admin/templates/admin/edit_inline/stacked.html` required?  The way I read the existing feature it looks like it is applied only for fieldsets rather than formsets.
+We also have in the docs:  > Some browsers (e.g. Chrome or Firefox) support headless testing    Should we add edge in here?
+Also would adding supporting for "chromium" be almost the same as these changes?
+so what is the consensus?    * test y/n?  * identity check y/n?
+@felixxm Do you remember the "why" here? It seems that Snowflake also needs this behavior, otherwise other backends tests fail with "Connection is closed" when running tests in parallel. I'm wondering what a name for a feature flag could be.
+@fchollet Is it test_spare_output ? I am getting confused.  Since we can convert a SparseTensor into a DenseTensor using tf.sparse.to_dense
+What I don't get is this: why is `standardize_dtype` being called on a shape element? Also, shouldn't the dtype of a shape element be int?
+What is the issue? Numerical difference across backends?
+But isn't the issue with JAX specifically? I'm confused.
+Was that for a circular dependency?
+Ok, will do. Still in the `keras/utils` folder though?
+Why was this necessary?
+Sorry, I misunderstood the review.  What's the difference in the two approaches?
+Any issue with `call`?
+What's the original issue with using a list though?
+Isn't this because MLX doesn't support int64?
+How do you create a compiled graph in OpenVINO?
+Ok, but do you think I can change it to `True` to be consistent with `compute_loss`? Or should I keep `False` for backwards compatibility?
+It's not supported how? Could we support it? The code is written in backend-agnostic ops.
+Wouldn't an epsilon value of 1e-12 generally lead to overflow in float32, float16?
+Is this a TODO?
+I was trying to match [`_get_jax_state` signature](https://github.com/keras-team/keras/blob/master/keras/src/backend/jax/trainer.py#L943-L948).  So you're saying there isn't any use case that users want to get some of the variables only?
+@mattdangerw do you see an issue with always including metrics and optimizer variables?
+Can you explain why this is necessary?
+Why is this necessary?
+Why is this change necessary?
+What is the implication here -- do users have to specify this key in the data?
+Any chance that this could succeed yet yield an incorrect result?
+@nglehuy  could you provide a reproducible script for the issue?
+Can you provide more details? Having an op that isn't jittable seems like a bug in the top. Also, this should be `self.backend.backend()` rather than `backend.backend()`
+Why lambda?
+Do you mean at the start of this function or even before? 
+This seems like an important thing to support, can you attach a TODO with an issue number to this line?
+What happens to the inverse? On line 563, I see that it is tested, but excludes the value below `vmin`. But that was when it became 0 for everything, which could never be inverted uniquely; is it uniquely invertible now?
+Do we need 10000 points? That seems a bit large, though I didn't check how slow the test was.
+It's a little bit unclear to me why this information is important/difference between steps and distance - is there a place where this is discussed? 
+I put this in because before I worked out why not, it was a surprise to me that the arrows weren't visually equidistant along the streamline. Happy to drop this if it causes more confusion than it clears up, or try and clarify it a bit?
+It's already there?
+They're both using `.get`?
+Right now it seems like the two bottom figures are identical?    Can you change so that the x-scale has base 3 instead? In that way it may be easier to see that it actually makes a difference?
+These numbers seem too "clean" for a mouse movement? And why does elev equal roll and roll 0? Better to have test cases where values don’t happen to cancel out. 
+ignore this question
+I'm unclear how this relates to the context.    What exactly do backend implementors implement? Do they reimplement this function?  Also, how do they check? Do they draw a text and additionally its bbox? Would a minimal example be helpful?
+what is this case? 
+Also this has me wondering what's going on when we set "none" and if that's related to #28475
+'but it seemed like it would complicate things'  Why? 
+Was this change supposed to be included?
+A few quick suggestions for enhancing this test: Should we also see how `simplify=True` interacts with `remove_nans=True`? (see test above this)  Is there any issue if the first MOVETO is `(nan, nan)` and then we insert it here?  Could you test this with a compound path with two CLOSEPOLYs? (making sure the correct MOVETO gets inserted for each subpath)   
+However, what about the failing pytests in path_simplification.py  as mentioned in https://github.com/matplotlib/matplotlib/pull/28478#issuecomment-2241522679. Should I also modify them so as to fix the off by one errors?  
+This seems unrelated?
+I see what this is likely for, but as these conditions appear uncovered by tests, I'm wondering what actually needed this change?
+I don't know why this change is needed now, but otherwise things randomly crash.
+Where does 0.02 come from? Does it work well with different font sizes?
+shouldn't you know which connector this is b/c this is deterministic? basically why loop?
+Is supported or is not supported?
+This sentence appears to be incomplete?
+Why a raw string?  
+That pytest's assertion rewriting isn't showing you a breakdown of the results is a bug, and `--showlocals` is a reasonable workaround, but I wouldn't leave a comment about it.    What do you mean by pytest's assertion rewriting?
+This is vague and confusing.  Either there is a plan, in which case explain, or just state the possible issues a user may experience here?      I'm also not clear why this is "provisional" at all? Do you mean it may go away again?  Why would that happen?  
+I think "resolve" makes sense here?  `get_backend` means "tell me what backend I'm using".  "resolve" means choose one so it is not unresolved.   That this is the default behaviour of `get_backend` is the design decision we are trying to reverse?
+That this is the default behaviour of `get_backend` is the design decision we are trying to reverse?  
+what are the **kwargs forwarded to?
+Oh sorry now I see it after the return - is that standard? 
+What do you mean by standard?
+This appears to be plotting a straight line that is unrelated to the table.  Can you explain why it is here?  If not, take it out.
+Is this follow-up PR already open?
+discussed this on the call today and is this being done to maintain backward compatibility if someone sets edgecolor to `None` and doesn't define `hatchcolor` or `hatch.color` to ensure that something gets drawn?     my thinking is that that should return a warning "Setting a hatch but hatch and edgecolor are none" but we shouldn't special case a fallback (that also may not work if patch.edgecolor is "none")
+Is this true for XLA as well?
+That means is this caution note is suffice?    **Caution**: Out-of-bounds indices will result in undefined behavior, which will differ between devices and backends.
+Why only qint8? What about for other signed quantized types T?  If the issue is that:  >  I found that when T = qint8   Windows: std::is_signed::value is false  Linux: std::is_signed::value is true  >   then that should be fixed.
+Why did you change this?
+Can you also remove the future import? That is only in Python 2.

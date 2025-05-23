@@ -1,0 +1,360 @@
+The code does not provide information about Oracle being affected.
+---------
+Not backward compatible for tables created before the naming convention change.
+---------
+Caches the result for performance
+---------
+The code uses explicit exception chaining with `from`, which may not be the intended behavior if implicit chaining is desired, as it sets `__cause__` instead of `__context__`.
+---------
+The function may return an incorrect language code if `get_language()` returns `None` and `settings.LANGUAGE_CODE` is not supported, leading to an empty string being returned instead of a valid fallback.
+---------
+The code returns a language prefix based on the language code, but it has a performance bottleneck due to the repeated call to `get_language()` and `settings.LANGUAGE_CODE`.
+---------
+The code uses `super` incorrectly, which will raise a `TypeError` unless `as_oracle` is a method in a class that properly calls `super().__init__()` or similar. Additionally, the string formatting with `%` is not safe and can lead to SQL injection vulnerabilities.
+---------
+The code does not explicitly check for "notes" in PEP-678; it focuses on testing behavior related to cached properties in Python 3.12.
+---------
+Potential performance bottleneck due to executing a query for each field in `against`, and logging a warning on every `DatabaseError` could lead to performance issues in production.
+---------
+The function returns an empty list, which may not be appropriate for generating a GROUP BY clause.
+---------
+The logic is confusing and could lead to unexpected behavior; consider clarifying the default behavior and warning message for better understanding and maintainability.
+---------
+The code enforces HTTPS by default in Django 6.0, with a warning for transitional settings, which is a violation of Python best practices due to the commented-out code and hardcoded version numbers.
+---------
+Not necessarily, the code checks if the data source is a vector but does not enforce it.
+---------
+CE here refers to the categorical crossentropy, which is a component of the focal loss calculation.
+---------
+`probas` is not explicitly defined in the provided code snippet. However, it seems to refer to the class probabilities derived from the `output` tensor, which is scaled so that the class probabilities of each sample sum to 1.
+---------
+Installing common requirements and other backends is unnecessary if the wheel and pytest are sufficient.
+---------
+Yes, it's possible to pass an optimizer that isn't an `Optimizer` instance, which would blow up when `self.optimizer.build(self.trainable_variables)` is called.
+---------
+Legacy optimizers are exempted and not instantiated if they don't exist in Keras 3.
+---------
+The code does not support tensors with unknown shapes and assumes offsets are not scalar tensors.
+---------
+Potential performance issues if not used within a JIT function
+---------
+Modifying a global config outside Keras can lead to unexpected behavior and compatibility issues; tests that rely on the default configuration might break if the global state is altered.
+---------
+Mixing inlined and top-level function definitions can lead to confusion and maintenance issues. Consider either keeping all functions inlined or pulling them all out with a `stateless_` prefix for clarity.
+---------
+No update to `upscale` and `increment` methods in the provided code snippet.
+---------
+The code casts tensors to the same dtype before performing `logaddexp`, but it does not ensure double precision, which might lead to less accurate results compared to using double precision intentionally.
+---------
+The test is non-deterministic if dropout is applied, but the provided code sets dropout to 0, making the output deterministic.
+---------
+Using an epsilon fuzz factor for division by zero is a valid approach to improve performance and robustness, avoiding the overhead of mask operations.
+---------
+to ensure numerical stability and precision in the affine transformation parameters
+---------
+The existing JAX optimizer in the code supports EMA through the `self.update_model_variables_moving_average` method, which is called conditionally based on `self.use_ema`.
+---------
+The code does not show any zipping of lists of different lengths, so the test working due to such zipping is not evident from the provided code.
+---------
+Introducing overhead to fine-tune `n` is acceptable if it significantly improves performance, but consider memory usage. Using one-epoch time to optimize `n` can be fine, but variability in metrics and callbacks should be considered. Setting a large `n` may consume excessive memory, so configurability is advisable.
+---------
+The function assumes `fig.get_layout_engine()` and `fig.get_compress()` exist, which may not be the case, leading to potential errors.
+---------
+The code does not explicitly remove lines from the evoked plot; it only toggles their visibility based on the `horizOn` and `vertOn` settings.
+---------
+The code draws a box and whisker plot to represent the distribution of data, including quartiles, median, and outliers.
+---------
+The whiskers extend to the farthest point within 1.5x the inter-quartile range (IQR) distance from the quartiles.
+---------
+returns the name of the axis
+---------
+The test is specific to toolbar button functionality and could be better placed in `test_backend_tools.py` for organizational clarity.
+---------
+No, it does not change an E result to an F result; it skips tests under certain conditions and fails if the subprocess does not behave as expected.
+---------
+`mpl_round` may not handle 0.5 consistently with standard rounding rules, potentially leading to unexpected results.
+---------
+The code ensures that the axis limits are set correctly for log scaling, but it does not address similar logic for other locators, which could lead to inconsistent behavior if other locators require similar adjustments.
+---------
+This function is not needed if mpl is not testing interactivity, as it handles interactive updates to legend positioning.
+---------
+to set up event handling and blitting for the artist object
+---------
+The line constructs the URI and srcset for an image, ensuring paths are correctly relative and formatted for HTML output.
+---------
+The function does not handle non-iterable inputs correctly, which could lead to unexpected behavior or errors.
+---------
+The `Ellipse` class in Matplotlib's `patches.py` does not have a `marker` property.
+---------
+The function does not consider saturation, only adjusting the darkness of the shadow based on the shade parameter.
+---------
+The code switches the default backend and handles interactive framework requirements, but it lacks proper error handling and warnings, which could lead to crashes or unexpected behavior.
+---------
+Offset relative to the font size means the distance is scaled based on the current font size, so setting an offset of (12, 12) in font size units will place the text 12 times the font size away from the specified point in both x and y directions.
+---------
+Creates a grid of subfigures within a figure, with options to control spacing and relative sizes of the subfigures.
+---------
+The code creates a histogram and can also add bars for plotting precomputed histograms, but it lacks proper handling for the `bar` type when `histtype` is specified.
+---------
+The `print csname args err` line should be removed as it breaks the function's return statement and is likely a debugging leftover.
+---------
+No explicit check for `None` could lead to unexpected behavior if `None` is passed, consider adding a validation check.
+---------
+Use `warnings.warn` with `DeprecationWarning` to issue deprecation warnings for a possible value of an argument.
+---------
+The code does not have critical correctness issues, performance bottlenecks, or severe violations of Python best practices. However, it assumes that the `Image` module from Pillow supports WEBP, which might not be the case if the Pillow version is not updated.
+---------
+`low-level` suggests direct manipulation of the grid specification without higher-level abstractions.
+---------
+The `add_gridspec` method creates a `GridSpec` object with specified `nrows` and `ncols` parameters, allowing for the creation of subplots with custom grid layouts.
+---------
+Runs a subprocess to test locale settings, skips tests if a specific message is found in the output.
+---------
+The code may introduce performance issues by recalculating the tight bounding box if it's not already available, and it could be improved by caching the tight bounding box to avoid redundant calculations.
+---------
+The changes appear intentional, as they handle deprecated behavior related to compressed masks and ensure compatibility with the updated API, while also updating the mask and unmasked polygons accordingly.
+---------
+The code sets the tick labels for an axis, but it does not reset or modify the associated tick positions, which can lead to mismatched labels if the tick positions change.
+---------
+The code does not explicitly handle warnings for the case where a function returns `0`. It focuses on error handling through exceptions rather than warnings.
+---------
+Deprecation warnings should be eliminated if the deprecated functionality is no longer supported and tests are ensuring the new behavior.
+---------
+The output may not be portable across different system languages due to reliance on system-specific commands and XML parsing.
+---------
+`_subplot_spec` is defined on the parent gridspec to restore the original layout when the colorbar is removed, ensuring that the figure's layout remains consistent. This approach avoids performance bottlenecks and maintains the integrity of the figure's structure.
+---------
+The `Writable` comment is unclear and does not align with the function's purpose, which is to return the direction of the span selector.
+---------
+The function's docstring is unclear and contains a misplaced comment, which could lead to confusion.
+---------
+The decorator stores documentation for artist properties in a private variable `kwarg_doc` on the method, which is used for generating the `kwdoc` list for artists via docstring interpolation.
+---------
+The comment suggests an allowed behavior, but the code asserts an exception, indicating a discrepancy between the intended behavior and the actual implementation.
+---------
+1. This change should not be applied directly to the main branch without thorough testing, as it modifies ONNX bindings and could introduce regressions.
+2. `= true` for `py arg "lowprecision cast"` likely enables low-precision casting by default, which can optimize performance but may affect accuracy.
+---------
+Making `opset_version` optional with a default value (either current exporter's default or latest) would improve usability without adding complexity.
+---------
+The data for the initializers is stored in separate files, and the call `onnx.save(onnx_model_with_initializers, os.path.join(basepath, model_location))` reflects that by saving the ONNX model with references to these external initializer files.
+---------
+No explicit validation of output buffers is performed; reliance on AOT runtime in AOT mode and manual handling otherwise.
+---------
+The code handles various method calls on tensor objects, optimizing and refactoring specific operations for better performance and compatibility with the framework's tracing and optimization passes.
+---------
+The utility exists to handle different types of inputs, including nested structures. Collapsing them could lead to incorrect handling of non-ndarray types and nested lists/tuples.
+---------
+Adds or merges a graph output entry, but the logic is unclear and may have performance issues due to repeated key checks.
+---------
+The code does not handle cases where `value` is a nested list or tuple containing `np.ndarray` or `tnp.ndarray`, which could lead to incomplete conversion.
+---------
+The code refactors the function to use a proxy for calling numpy functions mapped to torch equivalents, but it assumes all numpy functions return a type that can be wrapped by `NumpyNdarrayVariable`, which may not be accurate.
+---------
+The code does not increment any max version by 2; it specifies max versions for each operator.
+---------
+No critical correctness issues, performance bottlenecks, or Python best practices violations are evident in the provided code snippet.
+---------
+The code checks for an invalid argument error when setting a distribution sampler with a non-matching range, but it does not directly address whether this coverage is included in the OSS CI.
+---------
+#125091515651 appears to be a comment or placeholder and does not affect the code's functionality.
+---------
+to improve the accuracy of the quantization process by adjusting the bias based on midpoint errors
+---------
+The code lacks proper error handling and logging for the `rocblas_set_atomics_mode` call, which could lead to silent failures. Additionally, the use of `CHECK` without a clear error path might cause the program to terminate unexpectedly.
+---------
+Error message could be more descriptive; consider changing "TensorRT is not installed" to "Could not find TensorRT."
+---------
+The code suggests checking for a registered Zen kernel for an operation, which is critical for ensuring that the operation can be properly handled, preventing potential runtime errors.
+---------
+The code modifies the lookup table generation to avoid potential crashes by ensuring values are clamped within the valid range for 16-bit integers.
+---------
+alpha is used to determine if the instruction matches the pattern for a Leaky ReLU fusion, but the code snippet provided is incomplete and contains syntax issues, making it difficult to determine its exact usage.
+---------
+Detecting exceptions before they occur could be achieved by adding checks to ensure that `transformed * output_scale` does not exceed the range of representable values for `int32_t` before calling `std::llround`.
+---------
+Explicit device placement to CPU prevents operations from being executed on the GPU, violating the guideline to avoid explicit device placement.
+---------
+The graph is used to perform TensorFlow operations for summing array axes, ensuring correctness across different data types and array sizes.
+---------
+The function logic seems correct, but ensure `real_dtype` is defined or imported. Regarding `dtypes.cc` or `types.h`, follow the existing order and grouping of functions for consistency, typically placing related functions together.
+---------
+The code checks if the input tensor is complex and returns its real part, otherwise returns the input unchanged if it's already real. No critical issues, but consider using `tf.math.real` directly for simplicity.
+---------
+Allowing both 1 and -1 for strides can lead to performance inefficiencies and complexity in handling edge cases, potentially causing confusion in the logic.
+---------
+Without the extra pair of parentheses, you might encounter a clang error related to operator precedence or ambiguity, such as "error: use of undeclared identifier" or "error: expected expression." The exact error would depend on the specific context and how the operators are being interpreted.
+---------
+This code is platform-dependent and may not work on all systems, especially those without the `/sys/devices/system/cpu/` directory or the `regs/identification/midr_el1` file. It also assumes the presence of specific CPUID information and hardware capabilities, which can vary.
+---------
+The change ensures that the function handles tensor data types and sizes correctly, preventing runtime errors and ensuring the function's robustness.
+---------
+The code snippet appears to be C++ rather than Python, but if this were Python, it would lack proper syntax and structure. Assuming it's correctly implemented in C++, there are no critical correctness issues, performance bottlenecks, or Python best practices violations evident.
+---------
+The code replaces the computation of the loss and backpropagation for `SoftmaxCrossEntropyWithLogits` with a specialized version that optimizes for GPU and CPU devices, ensuring determinism and efficient memory usage.
+---------
+The max error might increase with more information due to compounded numerical inaccuracies. If `use_gpu` is `False`, the error should not change, but the code does not explicitly test this scenario. Testing with ROCm is not mentioned, so there is no confirmation of differences specific to ROCm.
+---------
+The code adjusts the number of threads based on hardware concurrency and a scaling factor, which can lead to suboptimal thread counts for large core counts, potentially affecting performance.
+---------
+The large number of cores affects systems by potentially reducing the number of threads if `num_threads` exceeds 16, which might be an optimization to prevent oversubscription on systems with many cores.
+---------
+The code conditionally adds "Tanh" to the list of activations only if MKL is enabled, but the commit message suggests it was added for CPU in general. This discrepancy should be clarified to ensure correct functionality.
+---------
+Iterating through `WhereNode` expressions to detect non-field references could be complex and may require deep traversal, potentially leading to performance issues. Consider using Django's expression parsing utilities to identify non-field expressions efficiently.
+---------
+The code checks if a URL pattern starts with a forward slash and issues a warning if it does, unless `APPEND_SLASH` is set to `False`.
+---------
+Renaming in a patch release may violate semantic versioning principles, potentially causing issues for users.
+---------
+Creating instances in `setUpTestData` is inefficient for a single test and violates best practices unless more tests are expected.
+---------
+This method could be a performance bottleneck if it frequently clears expired items, as it may not be optimized for large datasets.
+---------
+Python does not natively support asynchronous file I/O, which could lead to context switches or blocking behavior when using file operations within async functions.
+---------
+The code does not appear to have critical correctness issues, performance bottlenecks, or violations of Python best practices based on the provided snippet.
+---------
+The changes to `tabular.html` and `stacked.html` are likely required if you want to apply collapsible functionality to formsets as well, not just fieldsets. The existing feature seems to be limited to fieldsets, so extending it to formsets would be a new addition.
+---------
+Yes, add "edge" to support headless testing for Edge.
+---------
+Adding support for "chromium" would be similar, requiring an additional case to handle the headless argument, likely `options add argument "--headless new"` assuming Chromium uses the same headless flag as Chrome.
+---------
+test y/n? identity check n
+---------
+The code appears to be a test for a database migration system, possibly in a Django-like framework, with a focus on handling parallel test execution and ensuring connections are managed correctly, especially for Oracle databases. A feature flag name could be `PARALLEL_TEST_CONNECTION_MANAGEMENT`.
+---------
+The code converts dense inputs to a sparse tensor and then tests the output, but it seems to have a logical error in the conversion process and uses an incorrect method name (`test_spare_output` instead of `test_sparse_output`).
+---------
+Calling `standardize_dtype` on a shape element is unusual and likely incorrect, as shape elements should be integers, not data types. This could lead to unexpected behavior or errors.
+---------
+BatchNormalization scale parameter is commented out, which may lead to numerical differences across backends.
+---------
+The code returns a tuple containing `outputs` and `non_trainable_variables`, and optionally `losses` if `return_losses` is `True`.
+---------
+The code does not explicitly handle circular dependencies, but it may indirectly depend on the structure of the tensor and layout to avoid issues. Consider adding checks to prevent circular dependencies if the tensor or layout can form cycles.
+---------
+No critical issues identified, but consider using a context manager for `SeedGenerator` to ensure proper resource management.
+---------
+Manual memory release with `gc.collect()` is necessary to ensure that memory is freed immediately after quantization, preventing potential memory leaks or excessive memory usage.
+---------
+The first approach computes the Dice loss using a direct formula, while the second approach uses tensor operations and reshaping, which may introduce additional computational overhead and complexity.
+---------
+No critical correctness issues, performance bottlenecks, or violations of Python best practices are evident in the `call` usage within the provided code snippet.
+---------
+No critical issues with using a list, but converting to a `torch.nn.ParameterDict` may imply a need for dictionary-like access or operations not supported by lists.
+---------
+The code raises a `ValueError` for `sparse=True` with the MLX backend, but it does not explicitly check for `int64` support. If MLX indeed does not support `int64`, this should be handled separately, possibly by converting `int64` to a supported type.
+---------
+The code creates a compiled graph in OpenVINO by preparing input parameters, building the graph, and compiling it for a specified device.
+---------
+Changing it to `True` could break existing code relying on the current behavior, so consider keeping `False` for backwards compatibility.
+---------
+The code skips the test for the "torch" backend when the axis is a tuple, indicating that "torch" does not support tuple dimensions for the softmax operation. To support it, you would need to modify the code to handle tuple dimensions, possibly by iterating over the tuple and applying the softmax operation along each specified axis sequentially or by using a different approach that is compatible with "torch".
+---------
+Using an epsilon value of 1e-12 could lead to underflow rather than overflow in float32 and float16, potentially causing numerical instability.
+---------
+The `pass` statement indicates a placeholder, suggesting this is a TODO.
+---------
+No critical issues identified, but consider renaming the method to avoid confusion with the private method `_get_jax_state`.
+---------
+Always including metrics and optimizer variables may lead to unnecessary memory usage if they are not needed.
+---------
+The code ensures that the seed is properly initialized and validated, and that any unrecognized keyword arguments raise an error, which is necessary for maintaining the integrity and correctness of the random number generation process.
+---------
+to ensure `y_true` and `y_pred` have the same rank before applying the function, preventing shape mismatch errors.
+---------
+The change is necessary to ensure the TensorBoard projector callback correctly writes the projector configuration file with the expected format and metadata path.
+---------
+Users must specify the `orig width` and `orig height` keys in the data to avoid a `ValueError`.
+---------
+Potential for incorrect results due to improper handling of nested sample weights and structure mismatches.
+---------
+Potential performance bottleneck in using `map` and `replace` on large structures.
+---------
+The use of `bincount` is not jittable in JAX, causing a performance bottleneck and potential bug. Additionally, `backend.backend()` should be `self.backend.backend()` for correct object reference.
+---------
+The lambda function is used to create a callable that generates a sample from a beta distribution, which is not a violation of best practices but could be less readable.
+---------
+The code creates sample weights based on class weights, but it lacks proper syntax and error handling, which could lead to issues.
+---------
+TODO #123: Implement `fit` method support for openvino backend
+---------
+The inverse function may not be uniquely invertible if values are clipped or set to `vmin`, leading to potential loss of information.
+---------
+10000 points not explicitly used; consider performance with 10000 points
+---------
+The distinction between steps and distance is important for determining arrow placement and streamline integration, affecting the visual representation and accuracy of the streamlines.
+---------
+Arrows are placed at equidistant intervals along the number of steps each streamline takes, not necessarily equidistant in terms of streamline length.
+---------
+The code generates a new secondary x-axis on the specified location with optional transformation and functions, but it does not handle the case where `location` is a float outside the valid range, which could lead to unexpected behavior.
+---------
+The code may return incorrect results due to the misuse of the `.get` method without a default value, potentially leading to `None` being sorted, which can cause errors.
+---------
+Change `ax set xscale "log" base 2` to `ax set xscale "log" base 3` for the third subplot.
+---------
+The test cases lack diversity, which may not effectively validate the function's behavior under different conditions.
+---------
+No critical issues identified.
+---------
+Backend implementors implement the `text2path` method to handle text rendering and bounding box calculations, which are crucial for text layout. They check their implementations by using the `bbox` property of Text objects to verify the accuracy of their bounding box calculations.
+---------
+Checks for equality between two `MultivarColormap` instances, with potential issues in space complexity due to the use of `zip` and `all` on large collections.
+---------
+Setting "none" for face or edge color likely bypasses default color cycle and rcParams, potentially causing unexpected behavior if not handled correctly.
+---------
+The code checks if the face and edge colors of patches match expected values, which could complicate things by adding specific color checks that might not be universally applicable or easily adjustable.
+---------
+The change appears to be a complete rewrite of the function, which is not included in the original code snippet. It introduces a new implementation using `subprocess` and `plistlib` to list font paths, which was not present before.
+---------
+Consider testing `simplify=True` with `remove_nans=True` and verify behavior with `(nan, nan)` as the first `MOVETO`. Also, test with a compound path containing multiple `CLOSEPOLY` segments to ensure correct `MOVETO` insertion for each subpath.
+---------
+The test cases should be modified to account for off-by-one errors to ensure they correctly validate the path simplification logic.
+---------
+transforms and offsets for rendering paths, potential performance bottleneck with masked arrays
+---------
+The code updates the position and size of the text bounding box and draws the text with specified properties, including handling masked and non-finite positions, and applying path effects and TeX rendering if enabled.
+---------
+The code may be introducing a memory leak by not properly managing references to `vertices` and `codes`, leading to random crashes.
+---------
+0.02 is a hardcoded vertical offset for the suptitle position, which may not work well with different font sizes without adjustments.
+---------
+The loop is necessary to find and modify the visible connector, which is not guaranteed to be at a specific index, making the code deterministic in identifying and altering the correct connector.
+---------
+Not supported
+---------
+The code tests the `EngFormatter` class to ensure that the offset text and tick labels are correctly formatted with the appropriate unit prefixes and that the ticks do not contain the unit directly.
+---------
+The code uses a raw string to avoid escaping backslashes in the LaTeX formatted string.
+---------
+Pytest's assertion rewriting is a feature that enhances the readability of assertion failure messages by providing more detailed information about the values involved in the assertion.
+---------
+The code may have performance issues due to the repeated call to `rcParams[backend]` and potential confusion with the `resolve` flag's behavior. The provisional status suggests it might change in future releases, affecting compatibility.
+---------
+The function `get_backend` with `resolve=True` ensures a valid backend is returned, which may involve triggering backend resolution, while `resolve=False` returns `None` if no backend is selected, potentially leading to inconsistent behavior if not handled properly.
+---------
+The code does not reverse the default behavior of `get_backend`; it implements it by resolving the backend if `resolve` is True.
+---------
+The `**kwargs` are forwarded to the `PolyCollection` or `TriMesh` constructors, depending on the `shading` parameter.
+---------
+The function `tripcolor` generates a pseudocolor plot of an unstructured triangular grid, using either a `Triangulation` object or points and optional triangles and mask. It handles color values at either points or triangles and supports two shading methods: `flat` and `gouraud`.
+---------
+The function generates a pseudocolor plot of an unstructured triangular grid using either provided `Triangulation` or by calculating it from given points and optional triangles. It supports both flat and gouraud shading and handles color values at either points or triangle faces.
+---------
+The plot of the straight line is unrelated to the table and should be removed.
+---------
+The code initializes a collection of patches with various properties and sets up a temporary logic to resolve hatch color, which will be replaced by a proper mechanism in a follow-up PR.
+---------
+Setting a hatch but hatch and edgecolor are None should return a warning instead of special casing a fallback.
+---------
+The code computes the partition index for each ID based on the specified partition strategy, which is applicable to XLA as well, ensuring consistent behavior across different execution environments.
+---------
+The caution note is not sufficient as it does not cover the behavior difference between CPU and GPU, which can lead to different results and is critical for ensuring consistent behavior across devices.
+---------
+The code only checks for `qint8` to determine if the type is signed, which may not be correct for other signed quantized types `T`. This should be fixed to properly handle all signed quantized types.
+---------
+The code appears to be a TensorFlow OpKernel implementation for sampling from a multinomial distribution. The changes introduced include input validation checks, tensor allocation, and the use of Eigen for efficient computation. The code ensures that the logits are a matrix and num_samples is a scalar, checks for non-negative num_samples, and validates batch size and num_classes. It also handles memory allocation for temporary tensors and uses a functor to perform the multinomial sampling.
+---------
+Remove the `from __future__ import division` as it is only necessary for Python 2.
