@@ -46,7 +46,7 @@ if __name__ == '__main__':
     args = parse_args()
     llm_client = InferenceClient(base_url=args.llm_endpoint_url)
 
-    client = QdrantClient(path="./qdrant")
+    client = QdrantClient(path="../qdrant")
     model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
     db = QdrantVectorStore(
         client=client,
@@ -56,8 +56,8 @@ if __name__ == '__main__':
 
     answers = generate_answers(
         "./db/train/train.answer")
-    qc_pairs = generate_qc_pairs("/home/alina/hermes/db/test/test.question",
-                                 "/home/alina/hermes/db/test/test.code")[6000:]
+    qc_pairs = generate_qc_pairs("../db/test/test.question",
+                                 "../db/test/test.code")[6000:]
     docs = [f"Question: {q} Code: {c}" for q, c in qc_pairs]
     qwen_answers = []
     for j in docs:

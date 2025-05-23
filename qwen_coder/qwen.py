@@ -35,7 +35,7 @@ if __name__ == '__main__':
     args = parse_args()
     llm_client = InferenceClient(base_url=args.llm_endpoint_url)
     qc_pairs = generate_qc_pairs(
-        "/home/alina/hermes/db/test/test.question", "/home/alina/hermes/db/test/test.code")[6000:]
+        "../db/test/test.question", "../db/test/test.code")[6000:]
     docs = [f"Question: {q} Code: {c}" for q, c in qc_pairs]
     qwen_answers = []
     for i in range(len(docs)):
